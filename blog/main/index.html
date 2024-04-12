@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+    <meta charset="utf-8">
+    <title>MyBlog</title>
+</head> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+        <link rel="icon" type="image/png" href=&#x2F;icon&#x2F;favicon.png />
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=/css/main.css />
+
+    
+        <link
+            rel="stylesheet"
+            id="darkModeStyle"
+            type="text/css"
+            href=/css/dark.css
+            
+            
+                disabled
+            
+        />
+    
+
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main" id="main_title">
+        <a href=&#x2F;>Asvera</a>
+    </div>
+
+    <nav>
+        
+            <a href=&#x2F;>Home</a>
+        
+            <a href=&#x2F;blog>All posts</a>
+        
+            <a href=&#x2F;about>About</a>
+        
+            <a href=&#x2F;projects>Projects</a>
+        
+            <a href=&#x2F;tags>Tags</a>
+        
+
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+            <script src=/js/themetoggle.js></script>
+        
+    </nav>
+</header>
+        <section class="section">
+            <div class="container">
+                
+<h1 class="title">
+    Hello archie
+</h1>
+
+
+<!-- Page meta data  -->
+<div class="meta">
+    <p class="meta">2022-05-14 |
+        <!-- tags  -->
+        
+            
+                <a href=/tags/rust/>rust</a>
+            
+                <a href=/tags/cp/>CP</a>
+            
+        
+    </p>
+</div>
+
+<h2 id="demo">Demo</h2>
+<hr />
+<p>The Main branch source code hosted on <a href="https://archie-zola.netlify.app/">https://archie-zola.netlify.app/</a></p>
+<h3 id="screenshot">ScreenShot</h3>
+<p><img src="/screenshot/screenshot-light.png" alt="screenshot light" /></p>
+<p><img src="/screenshot/screenshot-dark.png" alt="screenshot dark" /></p>
+<h2 id="installation">Installation</h2>
+<hr />
+<p>First download this theme to your themes directory:</p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#0184bc;">cd</span><span> themes
+</span><span style="color:#e45649;">git</span><span> clone https://github.com/XXXMrG/archie-zola.git
+</span></code></pre>
+<p>or add as a git submodule:</p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">git</span><span> submodule add https://github.com/XXXMrG/archie-zola.git  themes/archie-zola
+</span></code></pre>
+<p>and then enable it in your config.toml:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#383a42;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#e45649;">theme </span><span>= </span><span style="color:#50a14f;">&quot;archie-zola&quot;
+</span></code></pre>
+<h2 id="feature">Feature</h2>
+<hr />
+<ul>
+<li>Pagination</li>
+<li>Tags</li>
+<li>Auto Dark Mode(based on system theme)</li>
+<li>Dark/Light Mode toggle</li>
+</ul>
+<p>in the planning stage：</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Google Analytics Script</li>
+<li><input disabled="" type="checkbox"/>
+Custom CSS &amp; JS</li>
+<li><input disabled="" type="checkbox"/>
+Twitter Cards &amp; Youtube video</li>
+</ul>
+<h2 id="config">Config</h2>
+<hr />
+<h3 id="theme-config">Theme config</h3>
+<p>Cause Zola limited custom config must under the <code>extra</code> field, so there are some different with the origin theme:</p>
+<p>Demo website config.toml:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#383a42;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#a0a1a7;"># control dark mode: auto | dark | toggle
+</span><span style="color:#e45649;">mode </span><span>= </span><span style="color:#50a14f;">&quot;toggle&quot;
+</span><span>
+</span><span style="color:#a0a1a7;"># subtitle will show under the title in index page
+</span><span style="color:#e45649;">subtitle </span><span>= </span><span style="color:#50a14f;">&quot;A zola theme forked from [archie](https://github.com/athul/archie)&quot;
+</span><span>
+</span><span style="color:#a0a1a7;"># if set true, will use external CDN resource to load font and js file
+</span><span style="color:#e45649;">useCDN </span><span>= </span><span style="color:#c18401;">false
+</span><span>
+</span><span style="color:#e45649;">favicon </span><span>= </span><span style="color:#50a14f;">&quot;/icon/favicon.png&quot;
+</span><span>
+</span><span style="color:#a0a1a7;"># show in the footer
+</span><span style="color:#e45649;">copyright </span><span>= </span><span style="color:#50a14f;">&quot;keith&quot;
+</span><span>
+</span><span style="color:#a0a1a7;"># config your Google Analysis ID
+</span><span style="color:#e45649;">ga </span><span>= </span><span style="color:#50a14f;">&quot;XXXX-XXXXX&quot;
+</span><span>
+</span><span style="color:#a0a1a7;"># optional: config your i18n entry
+</span><span>[extra.translations]
+</span><span style="color:#e45649;">languages </span><span>= [{</span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;en&quot;</span><span>, </span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;/&quot;</span><span>}]
+</span><span>
+</span><span style="color:#a0a1a7;"># config multi-language menu and other text
+</span><span>[[extra.translations.en]]
+</span><span style="color:#e45649;">show_more </span><span>= </span><span style="color:#50a14f;">&quot;Read more ⟶&quot;
+</span><span style="color:#e45649;">previous_page </span><span>= </span><span style="color:#50a14f;">&quot;← Previous&quot;
+</span><span style="color:#e45649;">next_page </span><span>= </span><span style="color:#50a14f;">&quot;Next →&quot;
+</span><span style="color:#e45649;">posted_on </span><span>= </span><span style="color:#50a14f;">&quot;on &quot;
+</span><span style="color:#e45649;">posted_by </span><span>= </span><span style="color:#50a14f;">&quot;Published by&quot;
+</span><span style="color:#e45649;">read_time </span><span>= </span><span style="color:#50a14f;">&quot;minute read&quot;
+</span><span style="color:#e45649;">all_tags </span><span>= </span><span style="color:#50a14f;">&quot;All tags&quot;
+</span><span style="color:#e45649;">menus </span><span>= [
+</span><span>    { </span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;Home&quot;</span><span>, </span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;/&quot;</span><span>, </span><span style="color:#e45649;">weight </span><span>= </span><span style="color:#c18401;">2 </span><span>},
+</span><span>    { </span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;All posts&quot;</span><span>, </span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;/posts&quot;</span><span>, </span><span style="color:#e45649;">weight </span><span>= </span><span style="color:#c18401;">2 </span><span>},
+</span><span>    { </span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;About&quot;</span><span>, </span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;/about&quot;</span><span>, </span><span style="color:#e45649;">weight </span><span>= </span><span style="color:#c18401;">3 </span><span>},
+</span><span>    { </span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;Tags&quot;</span><span>, </span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;/tags&quot;</span><span>, </span><span style="color:#e45649;">weight </span><span>= </span><span style="color:#c18401;">4 </span><span>},
+</span><span>]
+</span><span>
+</span><span style="color:#a0a1a7;"># config social icon info in the footer
+</span><span>[[extra.social]]
+</span><span style="color:#e45649;">icon </span><span>= </span><span style="color:#50a14f;">&quot;github&quot;
+</span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;GitHub&quot;
+</span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;https://github.com/XXXMrG/archie-zola&quot;
+</span><span>
+</span><span>[[extra.social]]
+</span><span style="color:#e45649;">icon </span><span>= </span><span style="color:#50a14f;">&quot;twitter&quot;
+</span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;Twitter&quot;
+</span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;https://github.com/your-name/&quot;
+</span><span>
+</span><span>[[extra.social]]
+</span><span style="color:#e45649;">icon </span><span>= </span><span style="color:#50a14f;">&quot;gitlab&quot;
+</span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;GitLab&quot;
+</span><span style="color:#e45649;">url </span><span>= </span><span style="color:#50a14f;">&quot;https://gitlab.com/your-name/&quot;
+</span><span>
+</span></code></pre>
+<h3 id="latex-math-formula-support">Latex math formula support</h3>
+<p>This theme support latex math formula, by using <a href="https://katex.org/">KaTeX</a>.</p>
+<p>You can enable it by add <code>katex_enable = true</code> in the <code>extra</code> section of config.toml:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#383a42;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[extra]
+</span><span style="color:#e45649;">katex_enable </span><span>= </span><span style="color:#c18401;">true
+</span></code></pre>
+<p>After that, you can use latex math formula in your markdown file:</p>
+<p>$$
+{x: \mathbf{Num},\ y: \mathbf{Num} \over x + y : \mathbf{Num} }\ (\text{N-Add})
+$$</p>
+<p>You can also use inline and block-style:</p>
+<ol>
+<li>\( \KaTeX \) inline</li>
+<li>\[ \KaTeX \]</li>
+<li>$$ \KaTeX $$</li>
+</ol>
+<h3 id="content-config">Content config</h3>
+<p><strong>In content/posts/_index.md. I use Zola config: transparent = true to implement the pagination</strong></p>
+<p>In Zola, you can use config in the _index.md to control pagination and sort post list:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#383a42;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#e45649;">paginate_by </span><span>= </span><span style="color:#c18401;">3
+</span><span style="color:#e45649;">sort_by </span><span>= </span><span style="color:#50a14f;">&quot;date&quot;
+</span><span>
+</span><span>[taxonomies]
+</span><span style="color:#e45649;">tags </span><span>= [</span><span style="color:#50a14f;">&quot;FE&quot;</span><span>, </span><span style="color:#50a14f;">&quot;Rust&quot;</span><span>]
+</span><span>
+</span><span>[extra]
+</span><span style="color:#e45649;">author </span><span>= { </span><span style="color:#e45649;">name </span><span>= </span><span style="color:#50a14f;">&quot;XXXMRG&quot;</span><span>, </span><span style="color:#e45649;">social</span><span>= </span><span style="color:#50a14f;">&quot;https://github.com/XXXMrG&quot; </span><span>}
+</span></code></pre>
+<h2 id="extension">Extension</h2>
+<p>Follow this <a href="https://www.getzola.org/documentation/themes/extending-a-theme/">doc</a> to extend theme.</p>
+<h2 id="contributing">Contributing</h2>
+<hr />
+<p>Thank you very much for considering contributing to this project!</p>
+<p>We appreciate any form of contribution:</p>
+<ul>
+<li>New issues (feature requests, bug reports, questions, ideas, ...)</li>
+<li>Pull requests (documentation improvements, code improvements, new features, ...)<sup class="footnote-reference"><a href="#zolawebsite">1</a></sup></li>
+</ul>
+<div class="footnote-definition" id="zolawebsite"><sup class="footnote-definition-label">1</sup>
+<p>Website: <a href="https://getzola.org">zola</a>, GitHub: <a href="https://github.com/getzola/zola">getzola/zola</a></p>
+</div>
+
+
+            </div>
+        </section>
+
+
+        <footer>
+    <div style="display:flex">
+        
+        <a class="soc" href=https:&#x2F;&#x2F;github.com&#x2F; >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;github.com&#x2F;fluidicon.png alt=GitHub>
+        </a>
+        
+        <a class="soc" href=https:&#x2F;&#x2F;gitlab.com&#x2F;your-name&#x2F; >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;about.gitlab.com&#x2F;nuxt-images&#x2F;ico&#x2F;apple-touch-icon-57x57.png alt=GitLab>
+        </a>
+        
+        <a class="soc" href=&#x2F;atom.xml >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;rss.com&#x2F;favicon.ico alt=RSS Feed>
+        </a>
+        
+    </div>
+    <div class="footer-info">
+        2024 © asvera | <a href="https://getzola.org/">Zola</a>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

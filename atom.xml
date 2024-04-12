@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Asvera</title>
+    <subtitle>A zola theme</subtitle>
+    <link href="/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-11-27T00:00:00+00:00</updated>
+    <id>/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My Projects</title>
+        <published>2022-11-27T00:00:00+00:00</published>
+        <updated>2022-11-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/projects/" type="text/html"/>
+        <id>/projects/</id>
+        
+        <content type="html">&lt;p&gt;This is my Fiesr Project blog post.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About Me</title>
+        <published>2022-05-14T00:00:00+00:00</published>
+        <updated>2022-05-14T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/about/" type="text/html"/>
+        <id>/about/</id>
+        
+        <content type="html">&lt;p&gt;Hello! I&#x27;m Alex Smith, a dedicated software developer with over 5 years of experience in the tech industry. I specialize in web development, particularly in JavaScript and React, and I&#x27;m always looking for new challenges to tackle.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;my-skills&quot;&gt;My Skills&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Programming Languages:&lt;&#x2F;strong&gt; JavaScript, Python, Ruby&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Frameworks and Libraries:&lt;&#x2F;strong&gt; React, Angular, Vue.js&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Tools and Technologies:&lt;&#x2F;strong&gt; Git, Docker, AWS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Soft Skills:&lt;&#x2F;strong&gt; Problem-solving, Teamwork, Communication&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;my-journey&quot;&gt;My Journey&lt;&#x2F;h2&gt;
+&lt;p&gt;I started my journey in software development as a junior developer at XYZ Tech, where I worked on a variety of projects ranging from small web applications to complex e-commerce platforms. Over the years, I&#x27;ve honed my skills and taken on more responsibilities, including leading a team to develop a high-traffic web application that significantly improved the company&#x27;s online presence.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;contact-me&quot;&gt;Contact Me&lt;&#x2F;h2&gt;
+&lt;p&gt;If you&#x27;re interested in collaborating or just want to chat, feel free to reach out:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;&#x2F;strong&gt; alex.smith@example.com&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;alex-smith&quot;&gt;Alex Smith on LinkedIn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alex-smith&quot;&gt;Alex Smith on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;My CV&#x2F;Resume&lt;&#x2F;p&gt;
+&lt;p&gt;Thank you for taking the time to learn a bit about me!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hello archie</title>
+        <published>2022-05-14T00:00:00+00:00</published>
+        <updated>2022-05-14T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/blog/main/" type="text/html"/>
+        <id>/blog/main/</id>
+        
+        <content type="html">&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;&#x2F;h2&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;The Main branch source code hosted on &lt;a href=&quot;https:&#x2F;&#x2F;archie-zola.netlify.app&#x2F;&quot;&gt;https:&#x2F;&#x2F;archie-zola.netlify.app&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;screenshot&quot;&gt;ScreenShot&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;screenshot&#x2F;screenshot-light.png&quot; alt=&quot;screenshot light&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;screenshot&#x2F;screenshot-dark.png&quot; alt=&quot;screenshot dark&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;&#x2F;h2&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;First download this theme to your themes directory:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; themes
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone https:&#x2F;&#x2F;github.com&#x2F;XXXMrG&#x2F;archie-zola.git
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;or add as a git submodule:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; submodule add https:&#x2F;&#x2F;github.com&#x2F;XXXMrG&#x2F;archie-zola.git  themes&#x2F;archie-zola
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and then enable it in your config.toml:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;theme &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;archie-zola&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;feature&quot;&gt;Feature&lt;&#x2F;h2&gt;
+&lt;hr &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;Pagination&lt;&#x2F;li&gt;
+&lt;li&gt;Tags&lt;&#x2F;li&gt;
+&lt;li&gt;Auto Dark Mode(based on system theme)&lt;&#x2F;li&gt;
+&lt;li&gt;Dark&#x2F;Light Mode toggle&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;in the planning stage：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Google Analytics Script&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Custom CSS &amp;amp; JS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Twitter Cards &amp;amp; Youtube video&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;config&quot;&gt;Config&lt;&#x2F;h2&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;theme-config&quot;&gt;Theme config&lt;&#x2F;h3&gt;
+&lt;p&gt;Cause Zola limited custom config must under the &lt;code&gt;extra&lt;&#x2F;code&gt; field, so there are some different with the origin theme:&lt;&#x2F;p&gt;
+&lt;p&gt;Demo website config.toml:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# control dark mode: auto | dark | toggle
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;mode &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;toggle&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# subtitle will show under the title in index page
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;subtitle &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;A zola theme forked from [archie](https:&#x2F;&#x2F;github.com&#x2F;athul&#x2F;archie)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# if set true, will use external CDN resource to load font and js file
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;useCDN &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;false
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;favicon &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;&#x2F;icon&#x2F;favicon.png&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# show in the footer
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;copyright &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;keith&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# config your Google Analysis ID
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;ga &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;XXXX-XXXXX&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# optional: config your i18n entry
+&lt;&#x2F;span&gt;&lt;span&gt;[extra.translations]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;languages &lt;&#x2F;span&gt;&lt;span&gt;= [{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;en&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;&#x2F;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;}]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# config multi-language menu and other text
+&lt;&#x2F;span&gt;&lt;span&gt;[[extra.translations.en]]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;show_more &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Read more ⟶&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;previous_page &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;← Previous&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;next_page &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Next →&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;posted_on &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;on &amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;posted_by &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Published by&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;read_time &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;minute read&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;all_tags &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;All tags&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;menus &lt;&#x2F;span&gt;&lt;span&gt;= [
+&lt;&#x2F;span&gt;&lt;span&gt;    { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Home&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;&#x2F;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;weight &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;},
+&lt;&#x2F;span&gt;&lt;span&gt;    { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;All posts&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;&#x2F;posts&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;weight &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;},
+&lt;&#x2F;span&gt;&lt;span&gt;    { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;About&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;&#x2F;about&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;weight &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span&gt;},
+&lt;&#x2F;span&gt;&lt;span&gt;    { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Tags&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;&#x2F;tags&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;weight &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;4 &lt;&#x2F;span&gt;&lt;span&gt;},
+&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# config social icon info in the footer
+&lt;&#x2F;span&gt;&lt;span&gt;[[extra.social]]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;icon &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;github&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;GitHub&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;github.com&#x2F;XXXMrG&#x2F;archie-zola&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[[extra.social]]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;icon &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;twitter&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Twitter&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;github.com&#x2F;your-name&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[[extra.social]]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;icon &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;gitlab&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;GitLab&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;gitlab.com&#x2F;your-name&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;latex-math-formula-support&quot;&gt;Latex math formula support&lt;&#x2F;h3&gt;
+&lt;p&gt;This theme support latex math formula, by using &lt;a href=&quot;https:&#x2F;&#x2F;katex.org&#x2F;&quot;&gt;KaTeX&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;You can enable it by add &lt;code&gt;katex_enable = true&lt;&#x2F;code&gt; in the &lt;code&gt;extra&lt;&#x2F;code&gt; section of config.toml:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span&gt;[extra]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;katex_enable &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After that, you can use latex math formula in your markdown file:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+{x: \mathbf{Num},\ y: \mathbf{Num} \over x + y : \mathbf{Num} }\ (\text{N-Add})
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;You can also use inline and block-style:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;\( \KaTeX \) inline&lt;&#x2F;li&gt;
+&lt;li&gt;\[ \KaTeX \]&lt;&#x2F;li&gt;
+&lt;li&gt;$$ \KaTeX $$&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;content-config&quot;&gt;Content config&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;In content&#x2F;posts&#x2F;_index.md. I use Zola config: transparent = true to implement the pagination&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In Zola, you can use config in the _index.md to control pagination and sort post list:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;paginate_by &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;sort_by &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;date&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[taxonomies]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;tags &lt;&#x2F;span&gt;&lt;span&gt;= [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;FE&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Rust&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[extra]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;author &lt;&#x2F;span&gt;&lt;span&gt;= { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;XXXMRG&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;social&lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;github.com&#x2F;XXXMrG&amp;quot; &lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;extension&quot;&gt;Extension&lt;&#x2F;h2&gt;
+&lt;p&gt;Follow this &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;themes&#x2F;extending-a-theme&#x2F;&quot;&gt;doc&lt;&#x2F;a&gt; to extend theme.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;contributing&quot;&gt;Contributing&lt;&#x2F;h2&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Thank you very much for considering contributing to this project!&lt;&#x2F;p&gt;
+&lt;p&gt;We appreciate any form of contribution:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;New issues (feature requests, bug reports, questions, ideas, ...)&lt;&#x2F;li&gt;
+&lt;li&gt;Pull requests (documentation improvements, code improvements, new features, ...)&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#zolawebsite&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;zolawebsite&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Website: &lt;a href=&quot;https:&#x2F;&#x2F;getzola.org&quot;&gt;zola&lt;&#x2F;a&gt;, GitHub: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&quot;&gt;getzola&#x2F;zola&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My second post</title>
+        <published>2019-11-28T00:00:00+00:00</published>
+        <updated>2019-11-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/blog/second/" type="text/html"/>
+        <id>/blog/second/</id>
+        
+        <content type="html">&lt;p&gt;This is my second blog post.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My first post</title>
+        <published>2019-11-27T00:00:00+00:00</published>
+        <updated>2019-11-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/blog/first/" type="text/html"/>
+        <id>/blog/first/</id>
+        
+        <content type="html">&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;2786602-4106993706.jpg&quot; alt=&quot;mount1&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
