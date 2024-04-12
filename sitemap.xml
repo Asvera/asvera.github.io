@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>/</loc>
+        <loc>https://asvera.github.io/</loc>
     </url>
     <url>
-        <loc>/about/</loc>
+        <loc>https://asvera.github.io/about/</loc>
         <lastmod>2022-05-14</lastmod>
     </url>
     <url>
-        <loc>/blog/</loc>
+        <loc>https://asvera.github.io/blog/</loc>
     </url>
     <url>
-        <loc>/blog/first/</loc>
+        <loc>https://asvera.github.io/blog/first/</loc>
         <lastmod>2019-11-27</lastmod>
     </url>
     <url>
-        <loc>/blog/main/</loc>
-        <lastmod>2022-05-14</lastmod>
-    </url>
-    <url>
-        <loc>/blog/second/</loc>
+        <loc>https://asvera.github.io/blog/second/</loc>
         <lastmod>2019-11-28</lastmod>
     </url>
     <url>
-        <loc>/projects/</loc>
+        <loc>https://asvera.github.io/projects/</loc>
         <lastmod>2022-11-27</lastmod>
     </url>
     <url>
-        <loc>/tags/</loc>
+        <loc>https://asvera.github.io/tags/</loc>
     </url>
     <url>
-        <loc>/tags/cp/</loc>
+        <loc>https://asvera.github.io/tags/python/</loc>
     </url>
     <url>
-        <loc>/tags/python/</loc>
-    </url>
-    <url>
-        <loc>/tags/rust/</loc>
+        <loc>https://asvera.github.io/tags/rust/</loc>
     </url>
 </urlset>

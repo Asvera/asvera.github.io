@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Asvera - CP</title>
     <subtitle>A zola theme</subtitle>
-    <link href="/tags/cp/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="/"/>
+    <link href="https://asvera.github.io/tags/cp/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://asvera.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-05-14T00:00:00+00:00</updated>
-    <id>/tags/cp/atom.xml</id>
+    <id>https://asvera.github.io/tags/cp/atom.xml</id>
     <entry xml:lang="en">
         <title>Hello archie</title>
         <published>2022-05-14T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="/blog/main/" type="text/html"/>
-        <id>/blog/main/</id>
+        <link rel="alternate" href="https://asvera.github.io/blog/main/" type="text/html"/>
+        <id>https://asvera.github.io/blog/main/</id>
         
         <content type="html">&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;&#x2F;h2&gt;
 &lt;hr &#x2F;&gt;
