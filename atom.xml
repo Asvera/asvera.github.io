@@ -69,11 +69,11 @@
         <content type="html">&lt;p&gt;This is my Project Page.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Real Estate Website&lt;&#x2F;strong&gt; :
+&lt;p&gt;Real Estate Website:
 Build utilises the ReactJs, Vanilla CSS, and variouse npm pakages such as framer motion, swiper, etc.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;StudentDB&lt;&#x2F;strong&gt; : 
+&lt;p&gt;StudentDB** : 
 Simple Flask app to Perform CRUD operations on sqlite database.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
