@@ -3,9 +3,10 @@
   --maincolor: red;
   --bordercl: rebeccapurple;
   --callouctcolor: dodgerblue;
-  --hovercolor: rgb(255, 72, 72);;
+  --hovercolor: rgb(255, 100, 100);;
   /* --darkMaincolor: #fa5072; */
-  --darkMaincolor: var(--hovercolor);
+  /* --darkMaincolor: var(--hovercolor); */
+  --darkMaincolor: dodgerblue;
 }
 
 html {
@@ -225,13 +226,14 @@ footer {
   display: flex;
   align-items: center;
   padding-right: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
   border-right: 2px solid;
   border-bottom: none;
 }
 
 .footer-info {
   padding: var(--footer-padding);
+  padding-left: 1rem;
 }
 
 #main_title {
@@ -454,4 +456,26 @@ table td {
 
 .taxonomy__item__title{
   display: inline;
+}
+
+.footer-social{
+  display: flex;
+}
+
+@media screen and (max-width:420px) {
+  footer{
+    display: block;
+      
+  }
+
+  footer > div {
+    display: block;
+    padding-left: 40px;
+  }
+
+  .footer-info {
+    display: block;
+    padding-left: 85px;
+  }
+
 }

@@ -7,7 +7,7 @@ function setTheme(mode) {
     } else if (mode === "light") {
         document.getElementById("darkModeStyle").disabled=true;
         document.getElementById("dark-mode-toggle").innerHTML ="<img src='   https://cdn-icons-png.flaticon.com/512/1823/1823397.png ' >" ;
-        feather.replace()
+        // feather.replace()
     }
 }
 
