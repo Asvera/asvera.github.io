@@ -66,8 +66,18 @@
         <link rel="alternate" href="https://asvera.github.io/projects/" type="text/html"/>
         <id>https://asvera.github.io/projects/</id>
         
-        <content type="html">&lt;p&gt;This is my Project Page.
-If want see all my project visit my Github Page&lt;&#x2F;p&gt;
+        <content type="html">&lt;p&gt;This is my Project Page.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Real Estate Website&lt;&#x2F;strong&gt; :
+Build utilises the ReactJs, Vanilla CSS, and variouse npm pakages such as framer motion, swiper, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;StudentDB&lt;&#x2F;strong&gt; : 
+Simple Flask app to Perform CRUD operations on sqlite database.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If want see all my project &amp;amp; code visit my Github Page&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -102,7 +112,7 @@ If want see all my project visit my Github Page&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;cv-resume&quot;&gt;CV&#x2F;Resume&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;&quot;&gt;My CV&#x2F;Resume&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;&quot;&gt;My CV&#x2F;Resume&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Thank you for taking the time to learn a bit about me!&lt;&#x2F;p&gt;
 </content>
         
