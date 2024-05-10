@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>Asvera</title>
+    <title>Asvera - javascript</title>
     <subtitle>My Protfolio Website</subtitle>
-    <link href="https://asvera.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://asvera.github.io/tags/javascript/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://asvera.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-01-22T00:00:00+00:00</updated>
-    <id>https://asvera.github.io/atom.xml</id>
+    <id>https://asvera.github.io/tags/javascript/atom.xml</id>
     <entry xml:lang="en">
         <title>JavaScript frameworks from the last decade didn&#x27;t grow well</title>
         <published>2024-01-22T00:00:00+00:00</published>
@@ -29,81 +29,6 @@
 &lt;p&gt;Nevertheless, you can’t assume that once you rewrite your application in Angular, everything’s going to be fine. They release updates a few times per year, so that has to be taken into account when estimating the effort it will take to maintain the application. Because if you let it fall behind, it will end up just like your Backbone.js app.&lt;&#x2F;p&gt;
 &lt;p&gt;If you install a library for everything, be prepared that the library maintainers may have retired the next time Angular releases a new major version. They’re on a beach in Hawaii, and you’re in the office pulling your hair out because the drag’n’drop file upload library doesn’t support the new version of Angular. But time’s passing quick. You don’t want to let your Angular app fall behind to the point where the relevant documentation is hard to find on the website because the version you’re using is so old. This is where software maintenance gets tricky. You have to decide what path will offer the best results for the least effort. You could make a pull request to the library, or you could convince the business that they don’t need to drag’n’drop their files. This is where engineering becomes fun because it’s not all just about writing code. Sometimes the solution may not involve code at all, but rather a conversation.&lt;&#x2F;p&gt;
 &lt;p&gt;Some say that the hardest part of doing anything is getting started. Running create-react-app on day one will give you the feeling of making a lot of progress. But if you’re not careful about your decisions, you’ll find that the maintenance of your software will remind you about your bad decisions many times over. But if you’re wise, you’ll see these reminders as the best teachers.&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Off to a good start</title>
-        <published>2023-11-08T00:00:00+00:00</published>
-        <updated>2023-11-08T00:00:00+00:00</updated>
-        <author>
-          <name>Unknown</name>
-        </author>
-        <link rel="alternate" href="https://asvera.github.io/blog/offtogoodstart/" type="text/html"/>
-        <id>https://asvera.github.io/blog/offtogoodstart/</id>
-        
-        <content type="html">&lt;p&gt;The hardest part of starting a blog was choosing a good theme. After going through various themes that I created myself and visiting various people&#x27;s blog sites for inspiration, it took almost 4-5 months to finally complete a theme for my site that I tailored it myself, facing many hardships and spending days tweaking HTML and CSS.&lt;&#x2F;p&gt;
-&lt;p&gt;You might laugh that I sound like a noob, but I&#x27;m not. Well, it kind of does sound like I am, but I have my reasons:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Semester exams&lt;&#x2F;li&gt;
-&lt;li&gt;College life depressions&lt;&#x2F;li&gt;
-&lt;li&gt;Laziness&lt;&#x2F;li&gt;
-&lt;li&gt;Spending time with friends, just chatting&lt;&#x2F;li&gt;
-&lt;li&gt;College attendance&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;Out of the reasons I listed, &lt;em&gt;college attendance&lt;&#x2F;em&gt; is the most important one. For some weird reason, my college has a 75% attendance criteria for each course of the semester, forcing students to comply with the rule. Anyone who doesn&#x27;t comply gets detained from taking the semester exams, resulting in failing the courses and accumulating backlogs. If you accumulate more than 7-8 backlogs, you have to repeat the year. There can be debates over this topic; I often hear my friends cursing this system, and one of them wasn&#x27;t allowed to appear for an examination.&lt;&#x2F;p&gt;
-&lt;p&gt;Anyway, I decided to use this simple yet elegant-looking theme.&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>My Projects</title>
-        <published>2022-11-27T00:00:00+00:00</published>
-        <updated>2022-11-27T00:00:00+00:00</updated>
-        <author>
-          <name>Unknown</name>
-        </author>
-        <link rel="alternate" href="https://asvera.github.io/projects/" type="text/html"/>
-        <id>https://asvera.github.io/projects/</id>
-        
-        <content type="html">&lt;p&gt;This is my Project Page.
-If want see all my project visit my Github Page&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>About Me</title>
-        <published>2022-05-14T00:00:00+00:00</published>
-        <updated>2022-05-14T00:00:00+00:00</updated>
-        <author>
-          <name>Unknown</name>
-        </author>
-        <link rel="alternate" href="https://asvera.github.io/about/" type="text/html"/>
-        <id>https://asvera.github.io/about/</id>
-        
-        <content type="html">&lt;p&gt;Hello! I&#x27;m asvera, a dedicated software developer. I specialize in web development, particularly in JavaScript and React, and I&#x27;m always looking for new challenges to tackle.&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
-&lt;h2 id=&quot;my-skills&quot;&gt;My Skills&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Programming Languages:&lt;&#x2F;strong&gt; C&#x2F;C++, JavaScript, Python&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Technologies:&lt;&#x2F;strong&gt; Sqlite3, MangoDB&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Frameworks and Libraries:&lt;&#x2F;strong&gt; React, Flask, ExpressJS&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Tools and Technologies:&lt;&#x2F;strong&gt; Git&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Other:&lt;&#x2F;strong&gt; Markdown&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;!-- - **Soft Skills:** Problem-solving, Teamwork, Communication --&gt;
-&lt;hr &#x2F;&gt;
-&lt;h2 id=&quot;contact-me&quot;&gt;Contact Me&lt;&#x2F;h2&gt;
-&lt;p&gt;If you&#x27;re interested in collaborating or just want to chat, feel free to reach out:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Email:&lt;&#x2F;strong&gt; asverarise@gmail.com&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;&#x2F;strong&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham-yadav-80976a267&quot;&gt;Asvera on LinkedIn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;asvera&quot;&gt;Asvera on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
-&lt;h2 id=&quot;cv-resume&quot;&gt;CV&#x2F;Resume&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;&quot;&gt;My CV&#x2F;Resume&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Thank you for taking the time to learn a bit about me!&lt;&#x2F;p&gt;
 </content>
         
     </entry>

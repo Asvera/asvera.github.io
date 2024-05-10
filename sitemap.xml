@@ -11,12 +11,12 @@
         <loc>https://asvera.github.io/blog/</loc>
     </url>
     <url>
-        <loc>https://asvera.github.io/blog/first/</loc>
-        <lastmod>2019-11-27</lastmod>
+        <loc>https://asvera.github.io/blog/jsformlastdecade/</loc>
+        <lastmod>2024-01-22</lastmod>
     </url>
     <url>
-        <loc>https://asvera.github.io/blog/second/</loc>
-        <lastmod>2019-11-28</lastmod>
+        <loc>https://asvera.github.io/blog/offtogoodstart/</loc>
+        <lastmod>2023-11-08</lastmod>
     </url>
     <url>
         <loc>https://asvera.github.io/projects/</loc>
@@ -26,9 +26,9 @@
         <loc>https://asvera.github.io/tags/</loc>
     </url>
     <url>
-        <loc>https://asvera.github.io/tags/python/</loc>
+        <loc>https://asvera.github.io/tags/javascript/</loc>
     </url>
     <url>
-        <loc>https://asvera.github.io/tags/rust/</loc>
+        <loc>https://asvera.github.io/tags/react/</loc>
     </url>
 </urlset>
