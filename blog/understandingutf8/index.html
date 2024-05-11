@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+    <meta charset="utf-8">
+    <title>MyBlog</title>
+</head> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+        <link rel="icon" type="image/png" href=&#x2F;icon&#x2F;favicon.png />
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://asvera.github.io/css/main.css />
+
+    
+        <link
+            rel="stylesheet"
+            id="darkModeStyle"
+            type="text/css"
+            href=https://asvera.github.io/css/dark.css
+            
+            
+                disabled
+            
+        />
+    
+
+    <title>Asvera's Website</title>
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main" id="main_title">
+        <a href=https:&#x2F;&#x2F;asvera.github.io&#x2F;>Asvera</a>
+    </div>
+
+    <nav>
+        
+            <a href=&#x2F;>Home</a>
+        
+            <a href=&#x2F;projects>Projects</a>
+        
+            <a href=&#x2F;about>About</a>
+        
+            <a href=&#x2F;blog>All posts</a>
+        
+            <a href=&#x2F;tags>Tags</a>
+        
+
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+            <script src=https://asvera.github.io/js/themetoggle.js></script>
+        
+    </nav>
+</header>
+        <section class="section">
+            <div class="container">
+                
+<h1 class="title">
+    Understanding Unicode and UTF-8
+</h1>
+
+
+<!-- Page meta data  -->
+<div class="meta">
+    <p class="meta">2024-01-25 |
+        <!-- tags  -->
+        
+            
+                <a href=https://asvera.github.io/tags/python/>python</a>
+            
+        
+    </p>
+</div>
+
+<p>Unicode maps 32-bit (4 byte) integers, also called code points or runes, to characters. UTF-8 is a way of storing those code points using less than 4 bytes per character.</p>
+<p>61 is the Unicode code point for a, 229 is å and 5793 is ᚡ. Unicode is how most modern programming languages represent strings: Java, .Net (C#, VB.Net), Go, and Python3, for example. Code points are usually written as two hexadecimal bytes prefixed by the letter u, or four prefixed by U. </p>
+<p>In python 3 this will display ᚡ:
+<code>print('\u16a1')</code></p>
+<p>The first byte of that 32-bit integer (the code point) covers most characters used by European languages. The first 127 code points (hex values 00 to 7f) are the same as</p>
+<p>ASCII: 61 is both Unicode and ASCII code for a. The next 128 code points (0x80-0xff) are the same as ISO-8859-1, also called latin-1: e5 (229) is both Unicode and ISO-8859-1 for å.</p>
+<p>The first two bytes cover characters for almost all modern languages. It is extremely rare to need the full 4 bytes as they are mostly empty. A rare exception, sad kitty U0001F640 needs three bytes. It broke WordPress when I put it in this post – that’s how common characters above two bytes are!</p>
+<p>An encoding is a mapping from bytes to Unicode code points. If you use the code points directly as their mapping (4 bytes per code point) you have UTF-32. So 00 00 00 61 is UTF-32 for Unicode code point 61, which is a.</p>
+<p>English speakers will usually only need one byte, and other language users two, so there are more efficient encodings. The most common Unicode encoding is UTF-8.</p>
+<p>The first 127 values of UTF-8 map directly to Unicode code points, and hence to ASCII codes. 61 is UTF-8 for Unicode code point 61, which is character a. If you only ever use values up to 127, UTF-8, Unicode code points, and ASCII are the same. This makes confusion easy.</p>
+<p>Above 127, UTF-8 uses between two and four bytes for each code point. c3 a5 is UTF-8 for Unicode code point u00e5, which is å. </p>
+<p>In python3:
+<code>bytes([0xc3, 0xa5]).decode(&quot;utf8&quot;)</code></p>
+<p>This means UTF-8 is not compatible with ISO-8859-1.</p>
+<p>When you receive a string of bytes, you also need to know it’s encoding to interpret it as Unicode. Luckily is is quite easy to test for valid UTF-8. In Go you use the Valid function of unicode/utf8. In Python you try to .decode(&quot;utf8&quot;) and catch the UnicodeDecodeError.</p>
+<p>In summary (all values are hex):</p>
+<table><thead><tr><th>UTF-8</th><th>UTF-32</th><th>Unicode code point</th><th>ASCII</th><th>ISO-8859-1</th><th>Character</th></tr></thead><tbody>
+<tr><td>61</td><td>00 00 00 61</td><td>61(decimal 97)</td><td>61</td><td>61</td><td>a</td></tr>
+<tr><td>c3 a5</td><td>00 00 00 e5</td><td>e5(decimal 229)</td><td>None</td><td>e5</td><td>å</td></tr>
+<tr><td>e1 9a a1</td><td>00 00 16 a1</td><td>16a1(decimal 5793)</td><td>None</td><td>None</td><td>ᚡ</td></tr>
+</tbody></table>
+
+
+            </div>
+        </section>
+
+
+        <footer>
+    <div class="footer-social">
+        
+        <a class="soc" href=https:&#x2F;&#x2F;github.com&#x2F;asvera >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;github.com&#x2F;fluidicon.png alt=GitHub>
+        </a>
+        
+        <a class="soc" href=https:&#x2F;&#x2F;gitlab.com&#x2F;asvera&#x2F; >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;about.gitlab.com&#x2F;nuxt-images&#x2F;ico&#x2F;apple-touch-icon-57x57.png alt=GitLab>
+        </a>
+        
+        <a class="soc" href=http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham-yadav-80976a267 >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;cdn-icons-png.freepik.com&#x2F;512&#x2F;3536&#x2F;3536505.png alt=LinkedIn>
+        </a>
+        
+        <a class="soc" href=&#x2F;atom.xml >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;rss.com&#x2F;favicon.ico alt=RSS Feed>
+        </a>
+        
+    </div>
+    <div class="footer-info">
+        2024 © asvera
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

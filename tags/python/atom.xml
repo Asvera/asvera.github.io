@@ -5,19 +5,39 @@
     <link href="https://asvera.github.io/tags/python/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://asvera.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2019-11-28T00:00:00+00:00</updated>
+    <updated>2024-01-25T00:00:00+00:00</updated>
     <id>https://asvera.github.io/tags/python/atom.xml</id>
     <entry xml:lang="en">
-        <title>My second post</title>
-        <published>2019-11-28T00:00:00+00:00</published>
-        <updated>2019-11-28T00:00:00+00:00</updated>
+        <title>Understanding Unicode and UTF-8</title>
+        <published>2024-01-25T00:00:00+00:00</published>
+        <updated>2024-01-25T00:00:00+00:00</updated>
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://asvera.github.io/blog/second/" type="text/html"/>
-        <id>https://asvera.github.io/blog/second/</id>
+        <link rel="alternate" href="https://asvera.github.io/blog/understandingutf8/" type="text/html"/>
+        <id>https://asvera.github.io/blog/understandingutf8/</id>
         
-        <content type="html">&lt;p&gt;This is my second blog post.&lt;&#x2F;p&gt;
+        <content type="html">&lt;p&gt;Unicode maps 32-bit (4 byte) integers, also called code points or runes, to characters. UTF-8 is a way of storing those code points using less than 4 bytes per character.&lt;&#x2F;p&gt;
+&lt;p&gt;61 is the Unicode code point for a, 229 is å and 5793 is ᚡ. Unicode is how most modern programming languages represent strings: Java, .Net (C#, VB.Net), Go, and Python3, for example. Code points are usually written as two hexadecimal bytes prefixed by the letter u, or four prefixed by U. &lt;&#x2F;p&gt;
+&lt;p&gt;In python 3 this will display ᚡ:
+&lt;code&gt;print(&#x27;\u16a1&#x27;)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The first byte of that 32-bit integer (the code point) covers most characters used by European languages. The first 127 code points (hex values 00 to 7f) are the same as&lt;&#x2F;p&gt;
+&lt;p&gt;ASCII: 61 is both Unicode and ASCII code for a. The next 128 code points (0x80-0xff) are the same as ISO-8859-1, also called latin-1: e5 (229) is both Unicode and ISO-8859-1 for å.&lt;&#x2F;p&gt;
+&lt;p&gt;The first two bytes cover characters for almost all modern languages. It is extremely rare to need the full 4 bytes as they are mostly empty. A rare exception, sad kitty U0001F640 needs three bytes. It broke WordPress when I put it in this post – that’s how common characters above two bytes are!&lt;&#x2F;p&gt;
+&lt;p&gt;An encoding is a mapping from bytes to Unicode code points. If you use the code points directly as their mapping (4 bytes per code point) you have UTF-32. So 00 00 00 61 is UTF-32 for Unicode code point 61, which is a.&lt;&#x2F;p&gt;
+&lt;p&gt;English speakers will usually only need one byte, and other language users two, so there are more efficient encodings. The most common Unicode encoding is UTF-8.&lt;&#x2F;p&gt;
+&lt;p&gt;The first 127 values of UTF-8 map directly to Unicode code points, and hence to ASCII codes. 61 is UTF-8 for Unicode code point 61, which is character a. If you only ever use values up to 127, UTF-8, Unicode code points, and ASCII are the same. This makes confusion easy.&lt;&#x2F;p&gt;
+&lt;p&gt;Above 127, UTF-8 uses between two and four bytes for each code point. c3 a5 is UTF-8 for Unicode code point u00e5, which is å. &lt;&#x2F;p&gt;
+&lt;p&gt;In python3:
+&lt;code&gt;bytes([0xc3, 0xa5]).decode(&amp;quot;utf8&amp;quot;)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This means UTF-8 is not compatible with ISO-8859-1.&lt;&#x2F;p&gt;
+&lt;p&gt;When you receive a string of bytes, you also need to know it’s encoding to interpret it as Unicode. Luckily is is quite easy to test for valid UTF-8. In Go you use the Valid function of unicode&#x2F;utf8. In Python you try to .decode(&amp;quot;utf8&amp;quot;) and catch the UnicodeDecodeError.&lt;&#x2F;p&gt;
+&lt;p&gt;In summary (all values are hex):&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;UTF-8&lt;&#x2F;th&gt;&lt;th&gt;UTF-32&lt;&#x2F;th&gt;&lt;th&gt;Unicode code point&lt;&#x2F;th&gt;&lt;th&gt;ASCII&lt;&#x2F;th&gt;&lt;th&gt;ISO-8859-1&lt;&#x2F;th&gt;&lt;th&gt;Character&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;61&lt;&#x2F;td&gt;&lt;td&gt;00 00 00 61&lt;&#x2F;td&gt;&lt;td&gt;61(decimal 97)&lt;&#x2F;td&gt;&lt;td&gt;61&lt;&#x2F;td&gt;&lt;td&gt;61&lt;&#x2F;td&gt;&lt;td&gt;a&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;c3 a5&lt;&#x2F;td&gt;&lt;td&gt;00 00 00 e5&lt;&#x2F;td&gt;&lt;td&gt;e5(decimal 229)&lt;&#x2F;td&gt;&lt;td&gt;None&lt;&#x2F;td&gt;&lt;td&gt;e5&lt;&#x2F;td&gt;&lt;td&gt;å&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;e1 9a a1&lt;&#x2F;td&gt;&lt;td&gt;00 00 16 a1&lt;&#x2F;td&gt;&lt;td&gt;16a1(decimal 5793)&lt;&#x2F;td&gt;&lt;td&gt;None&lt;&#x2F;td&gt;&lt;td&gt;None&lt;&#x2F;td&gt;&lt;td&gt;ᚡ&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
 </content>
         
     </entry>
