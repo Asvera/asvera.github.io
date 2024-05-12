@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+    <meta charset="utf-8">
+    <title>MyBlog</title>
+</head> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+        <link rel="icon" type="image/png" href=&#x2F;icon&#x2F;favicon.png />
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://asvera.github.io/css/main.css />
+
+    
+        <link
+            rel="stylesheet"
+            id="darkModeStyle"
+            type="text/css"
+            href=https://asvera.github.io/css/dark.css
+            
+            
+                disabled
+            
+        />
+    
+
+    <title>Asvera's Website</title>
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main" id="main_title">
+        <a href=https:&#x2F;&#x2F;asvera.github.io&#x2F;>Asvera</a>
+    </div>
+
+    <nav>
+        
+            <a href=&#x2F;>Home</a>
+        
+            <a href=&#x2F;projects>Projects</a>
+        
+            <a href=&#x2F;about>About</a>
+        
+            <a href=&#x2F;blog>All posts</a>
+        
+            <a href=&#x2F;tags>Tags</a>
+        
+
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+            <script src=https://asvera.github.io/js/themetoggle.js></script>
+        
+    </nav>
+</header>
+        <section class="section">
+            <div class="container">
+                
+<h1 class="title">
+    Javascript’s async&#x2F;await &amp; Promise in a few words
+</h1>
+
+
+<!-- Page meta data  -->
+<div class="meta">
+    <p class="meta">2024-03-02 |
+        <!-- tags  -->
+        
+            
+                <a href=https://asvera.github.io/tags/javascript/>javascript</a>
+            
+        
+    </p>
+</div>
+
+<p>This is a very common pattern in Javascript:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#0184bc;">myFunc</span><span>(</span><span style="color:#e45649;">value</span><span>, </span><span style="color:#e45649;">successCallback</span><span>, </span><span style="color:#e45649;">errorCallback</span><span>)
+</span></code></pre>
+<p>If myFunc could block (such as on network access), we don’t want to block Javascript’s single thread, so we asked to be notified when the operation is complete.</p>
+<p>Javascript added syntactic sugar to make this pattern more pleasant, in two steps.</p>
+<p>The first step is adding a Promise object. myFunc would now returns a Promise, and the caller looks like this:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#0184bc;">myFunc</span><span>(</span><span style="color:#e45649;">value</span><span>).</span><span style="color:#0184bc;">then</span><span>(</span><span style="color:#e45649;">successCallback</span><span>, </span><span style="color:#e45649;">errorCallback</span><span>)
+</span></code></pre>
+<p>Very similar. An improvement is you can now return this Promise up the call chain, instead of passing down your callbacks, and you can chain them. I sometimes think of Promise as ‘CallbackManager’. It wraps them and gives them a nicer interface.</p>
+<p>The second step, and the key one, is the two new keywords async and await, that allow you to do this:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#a626a4;">async function </span><span style="color:#0184bc;">wrapper</span><span>() {
+</span><span>  </span><span style="color:#a626a4;">await </span><span style="color:#0184bc;">myFunc</span><span>(</span><span style="color:#e45649;">value</span><span>);
+</span><span>  </span><span style="color:#0184bc;">successCallback</span><span>();
+</span><span>}
+</span></code></pre>
+<p>If a function returns a Promise, we can put await in front and pretend that in the success case our code is linear. It reads a lot better. The failure case throws an exception:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#a626a4;">async function </span><span style="color:#0184bc;">wrapper</span><span>() {
+</span><span>  </span><span style="color:#a626a4;">try </span><span>{
+</span><span>    </span><span style="color:#a626a4;">await </span><span style="color:#0184bc;">myFunc</span><span>(</span><span style="color:#e45649;">value</span><span>);
+</span><span>    </span><span style="color:#0184bc;">successCallback</span><span>();
+</span><span>  } </span><span style="color:#a626a4;">catch </span><span>(</span><span style="color:#e45649;">e</span><span>) {
+</span><span>    </span><span style="color:#0184bc;">errorCallback</span><span>();
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>The async keyword, as far as I can tell, is just a marker for the Javascript interpreter to watch out for some voodoo within.</p>
+<p>The function just looks linear. It executes like a callback, in that other code will run while myFunc blocks.</p>
+<p>Let’s un-sugar an example, working backwards:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#a626a4;">async function </span><span style="color:#0184bc;">wrapper</span><span>() {
+</span><span>  </span><span style="color:#a0a1a7;">// code before
+</span><span>  </span><span style="color:#a626a4;">try </span><span>{
+</span><span>    </span><span style="color:#a626a4;">await </span><span style="color:#0184bc;">myFunc</span><span>(</span><span style="color:#e45649;">value</span><span>);
+</span><span>    </span><span style="color:#a0a1a7;">// code after
+</span><span>  } </span><span style="color:#a626a4;">catch </span><span>(</span><span style="color:#e45649;">e</span><span>) {
+</span><span>    </span><span style="color:#a0a1a7;">// err case which you always
+</span><span>    </span><span style="color:#a0a1a7;">// handle because you are a professional
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>Is equivalent to:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#a626a4;">function </span><span style="color:#0184bc;">wrapper</span><span>() {
+</span><span>  </span><span style="color:#a0a1a7;">// code before
+</span><span>  </span><span style="color:#0184bc;">myFunc</span><span>(</span><span style="color:#e45649;">value</span><span>).</span><span style="color:#0184bc;">then</span><span>(
+</span><span>    </span><span style="color:#a626a4;">function</span><span>(){ </span><span style="color:#a0a1a7;">// code after },
+</span><span>    </span><span style="color:#a626a4;">function</span><span>(){ </span><span style="color:#a0a1a7;">// err case }
+</span><span>  );
+</span><span>}
+</span></code></pre>
+<p>which is the modern way of writing:</p>
+<pre data-lang="javascript" style="background-color:#fafafa;color:#383a42;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#a626a4;">function </span><span style="color:#0184bc;">wrapper</span><span>() {
+</span><span>  </span><span style="color:#a0a1a7;">// code before
+</span><span>  </span><span style="color:#0184bc;">myfunc</span><span>(</span><span style="color:#e45649;">value</span><span>,
+</span><span>    </span><span style="color:#a626a4;">function</span><span>(){ </span><span style="color:#a0a1a7;">// code after },
+</span><span>    </span><span style="color:#a626a4;">function</span><span>(){ </span><span style="color:#a0a1a7;">// err case }
+</span><span>  );
+</span><span>}
+</span></code></pre>
+<p>await offers a straightforward solution to Javascript’s callback-hell by making code significantly easier to read. Just remember to catch the exception.</p>
+
+
+            </div>
+        </section>
+
+
+        <footer>
+    <div class="footer-social">
+        
+        <a class="soc" href=https:&#x2F;&#x2F;github.com&#x2F;asvera >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;github.com&#x2F;fluidicon.png alt=GitHub>
+        </a>
+        
+        <a class="soc" href=https:&#x2F;&#x2F;gitlab.com&#x2F;asvera&#x2F; >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;about.gitlab.com&#x2F;nuxt-images&#x2F;ico&#x2F;apple-touch-icon-57x57.png alt=GitLab>
+        </a>
+        
+        <a class="soc" href=http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham-yadav-80976a267 >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;cdn-icons-png.freepik.com&#x2F;512&#x2F;3536&#x2F;3536505.png alt=LinkedIn>
+        </a>
+        
+        <a class="soc" href=&#x2F;atom.xml >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;rss.com&#x2F;favicon.ico alt=RSS Feed>
+        </a>
+        
+    </div>
+    <div class="footer-info">
+        2024 © asvera
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
