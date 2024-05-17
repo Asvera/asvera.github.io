@@ -5,8 +5,32 @@
     <link href="https://asvera.github.io/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://asvera.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-03-02T00:00:00+00:00</updated>
+    <updated>2024-04-20T00:00:00+00:00</updated>
     <id>https://asvera.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Ocatve FOSS alternative to MATLab</title>
+        <published>2024-04-20T00:00:00+00:00</published>
+        <updated>2024-04-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/octave-foss-alternative/" type="text/html"/>
+        <id>https://asvera.github.io/blog/octave-foss-alternative/</id>
+        
+        <content type="html">&lt;p&gt;Being an engineer with non CS&#x2F;IT majors comes with learning software rather building one. There are various softwares for designing,ploting,simulation normally all these comes with the same pakaged software such as &lt;strong&gt;Matlab, GNUplot, Fusion360, Blender, Octave, FREECAD&lt;&#x2F;strong&gt;,&lt;em&gt;etc...&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For this blog, lets only talk about &lt;strong&gt;Plotting software&lt;&#x2F;strong&gt; such as Matlab, GNUplot, Octave.&lt;&#x2F;p&gt;
+&lt;p&gt;The most popular and commanly used in university and collage is none other than Matlab. It&#x27;s almost used by all Branches for Electrical to Mechanical.Rather, than saying Matlab is software say it&#x27;s and programming Language will be more accurate.&lt;&#x2F;p&gt;
+&lt;p&gt;There are 2 different things:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Matlab software&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Matlab Programming Language&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In Engineering syllabus there course &lt;em&gt;control Engineering&lt;&#x2F;em&gt; it could rather be whole new specialization. In this course use various methods such as &lt;em&gt;Bode plot, Nyquist Plot, Root Locus, etc..&lt;&#x2F;em&gt; to check the stability of a system. Since, I&#x27;m  FOSS supporter how can is use MATLab thus i was using Ocatve.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;octave.org&#x2F;&quot;&gt;&lt;strong&gt;Ocatve&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; is and open source software with same implementation or syntax as Matlab language. Other difference being Open Source it use and &lt;em&gt;Modularize approach&lt;&#x2F;em&gt; to load pakages.&lt;&#x2F;p&gt;
+&lt;p&gt;This &lt;em&gt;Modularize appproach&lt;&#x2F;em&gt; make it use less resources.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Javascript’s async&#x2F;await &amp; Promise in a few words</title>
         <published>2024-03-02T00:00:00+00:00</published>
@@ -173,6 +197,8 @@
         
         <content type="html">&lt;p&gt;This is my Project Page.&lt;&#x2F;p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Z4M_HqPIMXk&quot;&gt;&lt;strong&gt;Space Root React App&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Designed keeping in mind UX of visitor also fully responsive, and the Tech used is ExpressJS, ReactJS,
+TailwindCSS, React-Router-dom.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;residentweb&quot;&gt;&lt;strong&gt;Real Estate Website&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Build utilises the ReactJs, Vanilla CSS, and variouse npm pakages such as framer motion, swiper, etc.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;studentDB_flask&quot;&gt;&lt;strong&gt;StudenDB&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Simple app in &lt;em&gt;FLASK Micro framework&lt;&#x2F;em&gt; to Perform CRUD operations on sqlite database.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;Others&lt;&#x2F;strong&gt; - Other Vanilla JS projects such as &lt;strong&gt;calculator, weather app, etc&lt;&#x2F;strong&gt; is on my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&quot;&gt;Github&lt;&#x2F;a&gt; acccount.&lt;&#x2F;li&gt;
