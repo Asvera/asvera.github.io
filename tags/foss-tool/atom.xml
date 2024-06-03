@@ -26,7 +26,7 @@
 &lt;li&gt;&lt;strong&gt;Matlab Programming Language&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;In Engineering syllabus there course &lt;em&gt;control Engineering&lt;&#x2F;em&gt; it could rather be whole new specialization. In this course use various methods such as &lt;em&gt;Bode plot, Nyquist Plot, Root Locus, etc..&lt;&#x2F;em&gt; to check the stability of a system. Since, I&#x27;m  FOSS supporter how can is use MATLab thus i was using Ocatve.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;&#x2F;static&#x2F;img&#x2F;octave.jpg&quot; alt=&quot;Octave Image&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;octave.jpg&quot; alt=&quot;Ocatve&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;octave.org&#x2F;&quot;&gt;&lt;strong&gt;Ocatve&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; is and open source software written with C++ intended for carrying out numerical calculations and simulations with same implementation or syntax as Matlab language. Other difference being Open Source it use and &lt;em&gt;Modularize approach&lt;&#x2F;em&gt; to load pakages.&lt;&#x2F;p&gt;
 &lt;p&gt;This &lt;em&gt;Modularize appproach&lt;&#x2F;em&gt;  makes it utilize fewer resources&lt;&#x2F;p&gt;
 </content>
