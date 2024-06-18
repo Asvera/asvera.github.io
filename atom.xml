@@ -173,7 +173,7 @@
         <id>https://asvera.github.io/blog/offtogoodstart/</id>
         
         <content type="html">&lt;p&gt;The hardest part of starting a blog was choosing a good theme. After going through various themes that I created myself and visiting various people&#x27;s blog sites for inspiration, it took almost 4-5 months to finally complete a theme for my site that I tailored it myself, facing many hardships and spending days tweaking HTML and CSS.&lt;&#x2F;p&gt;
-&lt;p&gt;You might laugh that I sound like a noob, but I&#x27;m not. Well, it kind of does sound like I am, but I have my reasons:&lt;&#x2F;p&gt;
+&lt;p&gt;You might laugh that I sound like a noob, but I&#x27;m not. Well, it kind of does sound like I am, but I have my reasons and some of them are:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Semester exams&lt;&#x2F;li&gt;
 &lt;li&gt;College life depressions&lt;&#x2F;li&gt;
@@ -200,6 +200,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Z4M_HqPIMXk&quot;&gt;&lt;strong&gt;Space Root React App&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Designed keeping in mind UX of visitor also fully responsive, and the Tech used is ExpressJS, ReactJS,
 TailwindCSS, React-Router-dom.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;filmage&quot;&gt;&lt;strong&gt;FilMage&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Simple image processing REST API built with Flask that applies various filters (like blur, contour, detail, etc.) and to uploaded images via HTTP requests&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;mern_todo_app&quot;&gt;&lt;strong&gt;Todo App&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Created to-do application using the MERN stack, comprising MongoDB (NoSQL database), ExpressJS, ReactJS, and Node.js. Integrated Axios for efficient API communication.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;residentweb&quot;&gt;&lt;strong&gt;Real Estate Website&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Build utilises the ReactJs, Vanilla CSS, and variouse npm pakages such as framer motion, swiper, etc.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;studentDB_flask&quot;&gt;&lt;strong&gt;StudenDB&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Simple app in &lt;em&gt;FLASK Micro framework&lt;&#x2F;em&gt; to Perform CRUD operations on sqlite database.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;Others&lt;&#x2F;strong&gt; - Other Vanilla JS projects such as &lt;strong&gt;calculator, weather app, etc&lt;&#x2F;strong&gt; is on my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&quot;&gt;Github&lt;&#x2F;a&gt; acccount.&lt;&#x2F;li&gt;
@@ -233,12 +235,12 @@ TailwindCSS, React-Router-dom.&lt;&#x2F;li&gt;
 &lt;p&gt;If you&#x27;re interested in collaborating or just want to chat, feel free to reach out:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Email:&lt;&#x2F;strong&gt; asverarise@gmail.com&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;&#x2F;strong&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham-yadav-80976a267&quot;&gt;Asvera on LinkedIn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;&#x2F;strong&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham35325&quot;&gt;Asvera on LinkedIn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;GitHub:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;asvera&quot;&gt;Asvera on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;cv-resume&quot;&gt;CV&#x2F;Resume&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1L2z4jvx2zw6fdGdxipdiw-ja7Bo27Y6G&#x2F;view?usp=sharing&quot;&gt;My CV&#x2F;Resume&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1UMXhulIL9OXEYkVG8owa02-DZn2cZH6P&#x2F;view?usp=sharing&quot;&gt;My CV&#x2F;Resume&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Thank you for taking the time to learn a bit about me!&lt;&#x2F;p&gt;
 </content>
         
