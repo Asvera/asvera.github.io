@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+    <meta charset="utf-8">
+    <title>MyBlog</title>
+</head> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+        <link rel="icon" type="image/png" href=&#x2F;icon&#x2F;favicon.png />
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://asvera.github.io/css/main.css />
+
+    
+        <link
+            rel="stylesheet"
+            id="darkModeStyle"
+            type="text/css"
+            href=https://asvera.github.io/css/dark.css
+            
+            
+                disabled
+            
+        />
+    
+
+    <title>Asvera's Website</title>
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main" id="main_title">
+        <a href=https:&#x2F;&#x2F;asvera.github.io&#x2F;>Asvera</a>
+    </div>
+
+    <nav>
+        
+            <a href=&#x2F;>Home</a>
+        
+            <a href=&#x2F;projects>Projects</a>
+        
+            <a href=&#x2F;about>About Me</a>
+        
+            <a href=&#x2F;blog>All posts</a>
+        
+            <a href=&#x2F;tags>Tags</a>
+        
+
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+            <script src=https://asvera.github.io/js/themetoggle.js></script>
+        
+    </nav>
+</header>
+        <section class="section">
+            <div class="container">
+                
+<h1 class="title">
+    My .gitconfig file dissected
+</h1>
+
+
+<!-- Page meta data  -->
+<div class="meta">
+    <p class="meta">2024-06-24 |
+        <!-- tags  -->
+        
+            
+                <a href=https://asvera.github.io/tags/tech/>tech</a>
+            
+        
+    </p>
+</div>
+
+<p>This is my .gitconfig file. It’s not long. It’s not complicated. But it configures my workflow’s most important tool. I will dissect the file to better understand how git works and help the reader improve their own workflow.</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">[user]
+</span><span>	</span><span style="color:#e45649;">name</span><span> = asvera
+</span><span>	</span><span style="color:#e45649;">email</span><span> = hi@asvera.com
+</span><span>	</span><span style="color:#e45649;">signingkey</span><span> = AAAAABBBBBB
+</span><span>
+</span><span style="color:#e45649;">[gpg]
+</span><span>	</span><span style="color:#e45649;">program</span><span> = gpg
+</span><span>
+</span><span style="color:#e45649;">[commit]
+</span><span>	</span><span style="color:#e45649;">gpgsign</span><span> = true
+</span><span>
+</span><span style="color:#e45649;">[alias]
+</span><span>	</span><span style="color:#e45649;">co</span><span> = checkout
+</span><span>	</span><span style="color:#e45649;">ci</span><span> = commit
+</span><span>	</span><span style="color:#e45649;">st</span><span> = status
+</span><span>	</span><span style="color:#e45649;">br</span><span> = branch
+</span><span>	</span><span style="color:#e45649;">di</span><span> = diff
+</span><span>	</span><span style="color:#e45649;">fp</span><span> = fetch</span><span style="color:#e45649;"> --prune
+</span><span>	</span><span style="color:#e45649;">rb</span><span> = rebase
+</span><span>	</span><span style="color:#e45649;">hist</span><span> = log</span><span style="color:#e45649;"> --graph --abbrev-commit --decorate --date</span><span style="color:#a626a4;">=</span><span>short \
+</span><span style="color:#e45649;">		--format</span><span style="color:#a626a4;">=</span><span>format:</span><span style="color:#50a14f;">&#39;%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)&#39; </span><span>\
+</span><span style="color:#e45649;">		--branches --remotes --tags
+</span><span>	</span><span style="color:#e45649;">git</span><span> = !exec git
+</span><span>	</span><span style="color:#e45649;">gti</span><span> = !exec git
+</span><span>
+</span><span style="color:#e45649;">[push]
+</span><span>	</span><span style="color:#e45649;">autoSetupRemote</span><span> = true
+</span></code></pre>
+<p><strong>What is git config?</strong></p>
+<p>A .gitconfig is a file that configures git. But it’s not the only one.</p>
+<p>There are three files that tell git how to operate. Running <code>git config --add</code> will append one of these files. In order from lowest to highest priority:</p>
+<ul>
+<li>System: /etc/gitconfig. Applies to all users on a system. It is configured with the --system argument.</li>
+<li>User: ~/.gitconfig: Applies to all repositories of a user. It is configured with the --global argument.</li>
+<li>Repo: .git/config: Applies to a single repository. It is configured with no arguments.</li>
+</ul>
+<p>This article dissects my user git config. However, the configurations apply at all levels.</p>
+<p><strong>User section</strong></p>
+<p>The user section is my name and email.</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">[user]
+</span><span>	</span><span style="color:#e45649;">name</span><span> = asvera
+</span><span>	</span><span style="color:#e45649;">email</span><span> = hi@asvera.com
+</span></code></pre>
+<p>But where is it actually used? The user’s name and email get included to every commit and tag. This is clearly visible when running git log:</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">commit</span><span> ce97934132deb2b322c54de68cubc1d402ca18e4 (HEAD -</span><span style="color:#a626a4;">&gt;</span><span> git-config)
+</span><span style="color:#e45649;">Author:</span><span> asvera </span><span style="color:#a626a4;">&lt;</span><span>hi@asvera.com</span><span style="color:#a626a4;">&gt;
+</span><span style="color:#e45649;">Date:</span><span>   Fri Jun 24 20:31:03 2024</span><span style="color:#e45649;"> -0400
+</span><span>
+</span><span>    </span><span style="color:#e45649;">WIP:</span><span> User section
+</span></code></pre>
+<p>The user section yields a useful insight: It’s easy to change my name and email per repo. Separate work and personal, or multiple clients is an example use case.</p>
+<p>It leads to another insight: Nothing stops me from changing my user name and email to anything. Nothing stops anyone from changing their name and email to mine. Luckily we have GPG to mitigate that.</p>
+<p><strong>GPG key signing</strong></p>
+<p>GPG is a public-key cryptography system used to sign commits. It ensures commits published were made by me (someone with my private key or access to my GitHub account).</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span>	</span><span style="color:#e45649;">signingkey</span><span> = AAAAABBBBBB
+</span><span>
+</span><span style="color:#e45649;">[gpg]
+</span><span>	</span><span style="color:#e45649;">program</span><span> = gpg
+</span><span>
+</span><span style="color:#e45649;">[commit]
+</span><span>	</span><span style="color:#e45649;">gpgsign</span><span> = true
+</span></code></pre>
+<p>The configuration instructs git:</p>
+<ul>
+<li>signingkey = AAAAABBBBBB: The signing key to use</li>
+<li>program = gpg: The program used to sign</li>
+<li>gpgsign = true: To automatically attach a signature to every commit</li>
+</ul>
+<p>The signature is visible using <code>git log --show-signature</code>:</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">commit</span><span> da7c2d3863581f00d489c0852a91bc15ba98eae0 (HEAD -</span><span style="color:#a626a4;">&gt;</span><span> git-config)
+</span><span style="color:#e45649;">gpg:</span><span> Signature made Fri Jun 14 21:00:11 2024 EDT
+</span><span style="color:#e45649;">gpg:</span><span>                using EDDSA key WRVBGFF6D0E47B0B447FD15DC0B595B4F1573243
+</span><span style="color:#e45649;">gpg:</span><span> Good signature from </span><span style="color:#50a14f;">&quot;Tigger 2024-06-11 &lt;hi@asvera.com&gt;&quot; </span><span style="color:#a626a4;">[</span><span>ultimate</span><span style="color:#a626a4;">]
+</span><span style="color:#e45649;">Author:</span><span> asvera </span><span style="color:#a626a4;">&lt;</span><span>hi@asvera.com</span><span style="color:#a626a4;">&gt;
+</span><span style="color:#e45649;">Date:</span><span>   Fri Jun 14 21:00:11 2024</span><span style="color:#e45649;"> -0400
+</span><span>
+</span><span>    </span><span style="color:#e45649;">Start</span><span> GPG
+</span></code></pre>
+<p>Commits now appear “verified” in GitHub, GitLab, and other git platforms.</p>
+<p>I will not go in-depth into how GPG signing works.</p>
+<p><strong>Alias common actions</strong></p>
+<p>I use Git aliases for common commands to save keystrokes.</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">[alias]
+</span><span>	</span><span style="color:#e45649;">co</span><span> = checkout
+</span><span>	</span><span style="color:#e45649;">ci</span><span> = commit
+</span><span>	</span><span style="color:#e45649;">st</span><span> = status
+</span><span>	</span><span style="color:#e45649;">br</span><span> = branch
+</span><span>	</span><span style="color:#e45649;">di</span><span> = diff
+</span><span>	</span><span style="color:#e45649;">fp</span><span> = fetch</span><span style="color:#e45649;"> --prune
+</span><span>	</span><span style="color:#e45649;">rb</span><span> = rebase
+</span></code></pre>
+<p>While each alias only saves a few moments, it quickly adds up.</p>
+<p><strong>Pretty commit history</strong></p>
+<p>I’ve aliased commands too long to write comfortably. git hist uses git log to show a project’s commit graph.</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">hist</span><span> = log</span><span style="color:#e45649;"> --graph --abbrev-commit --decorate --date</span><span style="color:#a626a4;">=</span><span>short \
+</span><span style="color:#e45649;">    --branches --remotes --tags </span><span>\
+</span><span style="color:#e45649;">    --format</span><span style="color:#a626a4;">=</span><span>format:</span><span style="color:#50a14f;">&#39;%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)&#39; </span><span>\
+</span></code></pre>
+<p>Normal git log shows a linear history. It can be configured to show way more.</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span>    </span><span style="color:#e45649;">--graph:</span><span> Graphs </span><span style="color:#a626a4;">*</span><span>--</span><span style="color:#a626a4;">*</span><span>--</span><span style="color:#a626a4;">*</span><span> beside each commit, showing how they relate to each other.
+</span><span>    </span><span style="color:#e45649;">--abbrev-commit:</span><span> Shortens commit length
+</span><span>    </span><span style="color:#e45649;">--decorate:</span><span> Short for</span><span style="color:#e45649;"> --derocate</span><span>:short
+</span><span>    </span><span style="color:#e45649;">--date</span><span style="color:#a626a4;">=</span><span style="color:#50a14f;">short: </span><span style="color:#e45649;">Shortens</span><span> date
+</span><span>    </span><span style="color:#e45649;">--branches:</span><span> Shows all branches, not just the curent branch.
+</span><span>    </span><span style="color:#e45649;">--remotes:</span><span> Shows the local copy of all remote branches.
+</span><span>    </span><span style="color:#e45649;">--tags:</span><span> Shows tags
+</span><span>    </span><span style="color:#e45649;">--format</span><span style="color:#a626a4;">=</span><span style="color:#50a14f;">format:&#39;...&#39; </span><span style="color:#e45649;">Applies</span><span> a fancy format that I copied from somewhere years ago.</span><span style="color:#e45649;"> --oneline</span><span> is equivalent (but doesn’t look as good)
+</span></code></pre>
+<p>Put together, git hist shows my project’s commit graph:</p>
+<p>terminal screenshot of the alias git hist showing the commit graph</p>
+<p>git hist was especially useful as a new git user. I could quickly see the project’s commit graph after each merge, rebase, or cherry-pick. git hist is also indispensable when debugging failed operations. I now know the exact state of each branch in the repo.</p>
+<p><strong>Time-saving aliases</strong></p>
+<p>I’ve mindlessly typed git git status far too many times. One approach is to punish the behavior. “I should train myself to be better at typing so that I don’t make this mistake”.</p>
+<p>I disagree. Avoiding git git doesn’t improve the structure of my thinking. Instead, I smooth over the papercut.</p>
+<pre style="background-color:#fafafa;color:#383a42;"><code><span>git = !exec git
+</span><span>gti = !exec git
+</span></code></pre>
+<p>!exec executes eveything after as a terminal command. In this case running git again with all arguments. git git status becomes git status. It’s also recursive!</p>
+<p><strong>Auto setup remote</strong></p>
+<p>If I create and push a branch, I’ll often run into the error:</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">fatal:</span><span> The current branch new-branch has no upstream branch.
+</span><span style="color:#e45649;">To</span><span> push the current branch and set the remote as upstream, use
+</span><span>
+</span><span>    </span><span style="color:#e45649;">git</span><span> push</span><span style="color:#e45649;"> --set-upstream</span><span> origin new-branch
+</span></code></pre>
+<p>This is dumb. If a local branch doesn’t have an upstream branch, I always want to create one.</p>
+<pre data-lang="sh" style="background-color:#fafafa;color:#383a42;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#e45649;">[push]
+</span><span>	</span><span style="color:#e45649;">autoSetupRemote</span><span> = true
+</span></code></pre>
+<p>Setting <code>autoSetupRemote = true</code> automatically creates an upstream branch without having to use special args. I’ll never encounter this error again!</p>
+<p><strong>Conclusion</strong></p>
+<p>Dissecting my simple .gitconfig file reveals a lot. Hopefully you now have a deeper understanding of git and how to use it. I also hope .gitconfig has become less intimidating. Go modify your own!2.</p>
+
+
+            </div>
+        </section>
+
+
+        <footer>
+    <div class="footer-social">
+        
+        <a class="soc" href=https:&#x2F;&#x2F;github.com&#x2F;asvera >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;github.com&#x2F;fluidicon.png alt=GitHub>
+        </a>
+        
+        <a class="soc" href=https:&#x2F;&#x2F;gitlab.com&#x2F;asvera&#x2F; >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;about.gitlab.com&#x2F;nuxt-images&#x2F;ico&#x2F;apple-touch-icon-57x57.png alt=GitLab>
+        </a>
+        
+        <a class="soc" href=http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham35325 >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;cdn-icons-png.freepik.com&#x2F;512&#x2F;3536&#x2F;3536505.png alt=LinkedIn>
+        </a>
+        
+        <a class="soc" href=&#x2F;atom.xml >
+            <img id="socail-icons1" src=https:&#x2F;&#x2F;rss.com&#x2F;favicon.ico alt=RSS Feed>
+        </a>
+        
+    </div>
+    <div class="footer-info">
+        2024 © asvera
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Asvera - tech</title>
+    <subtitle>My Protfolio Website</subtitle>
+    <link href="https://asvera.github.io/tags/tech/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://asvera.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-06-24T00:00:00+00:00</updated>
+    <id>https://asvera.github.io/tags/tech/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My .gitconfig file dissected</title>
+        <published>2024-06-24T00:00:00+00:00</published>
+        <updated>2024-06-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/mygitconfigdissected/" type="text/html"/>
+        <id>https://asvera.github.io/blog/mygitconfigdissected/</id>
+        
+        <content type="html">&lt;p&gt;This is my .gitconfig file. It’s not long. It’s not complicated. But it configures my workflow’s most important tool. I will dissect the file to better understand how git works and help the reader improve their own workflow.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[user]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt; = asvera
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;email&lt;&#x2F;span&gt;&lt;span&gt; = hi@asvera.com
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;signingkey&lt;&#x2F;span&gt;&lt;span&gt; = AAAAABBBBBB
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[gpg]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;program&lt;&#x2F;span&gt;&lt;span&gt; = gpg
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[commit]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpgsign&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[alias]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;co&lt;&#x2F;span&gt;&lt;span&gt; = checkout
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;ci&lt;&#x2F;span&gt;&lt;span&gt; = commit
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;st&lt;&#x2F;span&gt;&lt;span&gt; = status
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;br&lt;&#x2F;span&gt;&lt;span&gt; = branch
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;di&lt;&#x2F;span&gt;&lt;span&gt; = diff
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;fp&lt;&#x2F;span&gt;&lt;span&gt; = fetch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --prune
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;rb&lt;&#x2F;span&gt;&lt;span&gt; = rebase
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;hist&lt;&#x2F;span&gt;&lt;span&gt; = log&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --graph --abbrev-commit --decorate --date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;short \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;		--format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;format:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;#39;%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)&amp;#39; &lt;&#x2F;span&gt;&lt;span&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;		--branches --remotes --tags
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; = !exec git
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gti&lt;&#x2F;span&gt;&lt;span&gt; = !exec git
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[push]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;autoSetupRemote&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;What is git config?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;A .gitconfig is a file that configures git. But it’s not the only one.&lt;&#x2F;p&gt;
+&lt;p&gt;There are three files that tell git how to operate. Running &lt;code&gt;git config --add&lt;&#x2F;code&gt; will append one of these files. In order from lowest to highest priority:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;System: &#x2F;etc&#x2F;gitconfig. Applies to all users on a system. It is configured with the --system argument.&lt;&#x2F;li&gt;
+&lt;li&gt;User: ~&#x2F;.gitconfig: Applies to all repositories of a user. It is configured with the --global argument.&lt;&#x2F;li&gt;
+&lt;li&gt;Repo: .git&#x2F;config: Applies to a single repository. It is configured with no arguments.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This article dissects my user git config. However, the configurations apply at all levels.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;User section&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The user section is my name and email.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[user]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt; = asvera
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;email&lt;&#x2F;span&gt;&lt;span&gt; = hi@asvera.com
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But where is it actually used? The user’s name and email get included to every commit and tag. This is clearly visible when running git log:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;commit&lt;&#x2F;span&gt;&lt;span&gt; ce97934132deb2b322c54de68cubc1d402ca18e4 (HEAD -&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; git-config)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Author:&lt;&#x2F;span&gt;&lt;span&gt; asvera &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;hi@asvera.com&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Date:&lt;&#x2F;span&gt;&lt;span&gt;   Fri Jun 24 20:31:03 2024&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; -0400
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;WIP:&lt;&#x2F;span&gt;&lt;span&gt; User section
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The user section yields a useful insight: It’s easy to change my name and email per repo. Separate work and personal, or multiple clients is an example use case.&lt;&#x2F;p&gt;
+&lt;p&gt;It leads to another insight: Nothing stops me from changing my user name and email to anything. Nothing stops anyone from changing their name and email to mine. Luckily we have GPG to mitigate that.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;GPG key signing&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;GPG is a public-key cryptography system used to sign commits. It ensures commits published were made by me (someone with my private key or access to my GitHub account).&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;signingkey&lt;&#x2F;span&gt;&lt;span&gt; = AAAAABBBBBB
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[gpg]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;program&lt;&#x2F;span&gt;&lt;span&gt; = gpg
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[commit]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpgsign&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The configuration instructs git:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;signingkey = AAAAABBBBBB: The signing key to use&lt;&#x2F;li&gt;
+&lt;li&gt;program = gpg: The program used to sign&lt;&#x2F;li&gt;
+&lt;li&gt;gpgsign = true: To automatically attach a signature to every commit&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The signature is visible using &lt;code&gt;git log --show-signature&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;commit&lt;&#x2F;span&gt;&lt;span&gt; da7c2d3863581f00d489c0852a91bc15ba98eae0 (HEAD -&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; git-config)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpg:&lt;&#x2F;span&gt;&lt;span&gt; Signature made Fri Jun 14 21:00:11 2024 EDT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpg:&lt;&#x2F;span&gt;&lt;span&gt;                using EDDSA key WRVBGFF6D0E47B0B447FD15DC0B595B4F1573243
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpg:&lt;&#x2F;span&gt;&lt;span&gt; Good signature from &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Tigger 2024-06-11 &amp;lt;hi@asvera.com&amp;gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span&gt;ultimate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Author:&lt;&#x2F;span&gt;&lt;span&gt; asvera &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;hi@asvera.com&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Date:&lt;&#x2F;span&gt;&lt;span&gt;   Fri Jun 14 21:00:11 2024&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; -0400
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Start&lt;&#x2F;span&gt;&lt;span&gt; GPG
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Commits now appear “verified” in GitHub, GitLab, and other git platforms.&lt;&#x2F;p&gt;
+&lt;p&gt;I will not go in-depth into how GPG signing works.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Alias common actions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I use Git aliases for common commands to save keystrokes.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[alias]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;co&lt;&#x2F;span&gt;&lt;span&gt; = checkout
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;ci&lt;&#x2F;span&gt;&lt;span&gt; = commit
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;st&lt;&#x2F;span&gt;&lt;span&gt; = status
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;br&lt;&#x2F;span&gt;&lt;span&gt; = branch
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;di&lt;&#x2F;span&gt;&lt;span&gt; = diff
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;fp&lt;&#x2F;span&gt;&lt;span&gt; = fetch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --prune
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;rb&lt;&#x2F;span&gt;&lt;span&gt; = rebase
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;While each alias only saves a few moments, it quickly adds up.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Pretty commit history&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve aliased commands too long to write comfortably. git hist uses git log to show a project’s commit graph.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;hist&lt;&#x2F;span&gt;&lt;span&gt; = log&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --graph --abbrev-commit --decorate --date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;short \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;    --branches --remotes --tags &lt;&#x2F;span&gt;&lt;span&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;    --format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;format:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;#39;%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)&amp;#39; &lt;&#x2F;span&gt;&lt;span&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Normal git log shows a linear history. It can be configured to show way more.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--graph:&lt;&#x2F;span&gt;&lt;span&gt; Graphs &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;--&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;--&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; beside each commit, showing how they relate to each other.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--abbrev-commit:&lt;&#x2F;span&gt;&lt;span&gt; Shortens commit length
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--decorate:&lt;&#x2F;span&gt;&lt;span&gt; Short for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --derocate&lt;&#x2F;span&gt;&lt;span&gt;:short
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;short: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Shortens&lt;&#x2F;span&gt;&lt;span&gt; date
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--branches:&lt;&#x2F;span&gt;&lt;span&gt; Shows all branches, not just the curent branch.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--remotes:&lt;&#x2F;span&gt;&lt;span&gt; Shows the local copy of all remote branches.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--tags:&lt;&#x2F;span&gt;&lt;span&gt; Shows tags
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;format:&amp;#39;...&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Applies&lt;&#x2F;span&gt;&lt;span&gt; a fancy format that I copied from somewhere years ago.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --oneline&lt;&#x2F;span&gt;&lt;span&gt; is equivalent (but doesn’t look as good)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Put together, git hist shows my project’s commit graph:&lt;&#x2F;p&gt;
+&lt;p&gt;terminal screenshot of the alias git hist showing the commit graph&lt;&#x2F;p&gt;
+&lt;p&gt;git hist was especially useful as a new git user. I could quickly see the project’s commit graph after each merge, rebase, or cherry-pick. git hist is also indispensable when debugging failed operations. I now know the exact state of each branch in the repo.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Time-saving aliases&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve mindlessly typed git git status far too many times. One approach is to punish the behavior. “I should train myself to be better at typing so that I don’t make this mistake”.&lt;&#x2F;p&gt;
+&lt;p&gt;I disagree. Avoiding git git doesn’t improve the structure of my thinking. Instead, I smooth over the papercut.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#383a42;&quot;&gt;&lt;code&gt;&lt;span&gt;git = !exec git
+&lt;&#x2F;span&gt;&lt;span&gt;gti = !exec git
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;!exec executes eveything after as a terminal command. In this case running git again with all arguments. git git status becomes git status. It’s also recursive!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Auto setup remote&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If I create and push a branch, I’ll often run into the error:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;fatal:&lt;&#x2F;span&gt;&lt;span&gt; The current branch new-branch has no upstream branch.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;To&lt;&#x2F;span&gt;&lt;span&gt; push the current branch and set the remote as upstream, use
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; push&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --set-upstream&lt;&#x2F;span&gt;&lt;span&gt; origin new-branch
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is dumb. If a local branch doesn’t have an upstream branch, I always want to create one.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[push]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;autoSetupRemote&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Setting &lt;code&gt;autoSetupRemote = true&lt;&#x2F;code&gt; automatically creates an upstream branch without having to use special args. I’ll never encounter this error again!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Dissecting my simple .gitconfig file reveals a lot. Hopefully you now have a deeper understanding of git and how to use it. I also hope .gitconfig has become less intimidating. Go modify your own!2.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
