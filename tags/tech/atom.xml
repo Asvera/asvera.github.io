@@ -5,8 +5,33 @@
     <link href="https://asvera.github.io/tags/tech/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://asvera.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-10-07T00:00:00+00:00</updated>
+    <updated>2025-03-07T00:00:00+00:00</updated>
     <id>https://asvera.github.io/tags/tech/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How i ended up making a c++ Bouncing ball game?</title>
+        <published>2025-03-07T00:00:00+00:00</published>
+        <updated>2025-03-07T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/bouncingbalss/" type="text/html"/>
+        <id>https://asvera.github.io/blog/bouncingbalss/</id>
+        
+        <content type="html">&lt;p&gt;Hey guys, its been long time since i wrote a blog, well i do want to write about this game i made a while ago in start of january but ended up not write till now. Well its not my fault really i my mid-semester exams was approching like a bullet train 😅️🚅️.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Anyways&lt;&#x2F;strong&gt; I was really interested in making Games since a very long time, So i did my research and ended up founding out that to make them you require 2 things:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;an engine&lt;&#x2F;strong&gt; (not the IC engine but the one which will make you implement movements, gravity, etc - &lt;strong&gt;inshort physics stuff&lt;&#x2F;strong&gt;, some popular engines are &lt;em&gt;unreal and unity&lt;&#x2F;em&gt;) &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;graphics Library&lt;&#x2F;strong&gt; (which will help in drawing stuff on the screen)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;WARNING&lt;&#x2F;strong&gt;
+You know what if you are going to write your own full scale engine and graphics lib then bravo mate you are the out of the worlds, &lt;em&gt;may your soul lie in peace!&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So, in my case since i wanted to learn stuff i decided not to use them but also did not want to write all the code my-self so i decided to go with a framework like SLD which does the basic graphics for me and since i did not want to make huge project just the begineer thing so wrote my own physics for it.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.libsdl.org&#x2F;&quot;&gt;&lt;strong&gt;Simple DirectMedia Layer (SDL)&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; is a cross-platform library designed to make it easy to write multi-media software, such as games and emulators.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;BouncingBall&quot;&gt;&lt;strong&gt;Here,Bouncing Ball&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt;  the github link for the code if anyone want to have a peek of my game. I have provided the compiling instruction with it.&lt;&#x2F;p&gt;
+&lt;p&gt;Bye, Nexttime.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>TVA my local AI</title>
         <published>2024-10-07T00:00:00+00:00</published>

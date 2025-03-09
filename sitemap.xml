@@ -11,6 +11,10 @@
         <loc>https://asvera.github.io/blog/</loc>
     </url>
     <url>
+        <loc>https://asvera.github.io/blog/bouncingbalss/</loc>
+        <lastmod>2025-03-07</lastmod>
+    </url>
+    <url>
         <loc>https://asvera.github.io/blog/js-async-awaitandpromise/</loc>
         <lastmod>2024-03-02</lastmod>
     </url>
@@ -47,6 +51,9 @@
     </url>
     <url>
         <loc>https://asvera.github.io/tags/foss-tool/</loc>
+    </url>
+    <url>
+        <loc>https://asvera.github.io/tags/graphics/</loc>
     </url>
     <url>
         <loc>https://asvera.github.io/tags/javascript/</loc>
