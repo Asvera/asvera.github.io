@@ -217,6 +217,7 @@ h6::before {
 footer {
   display: flex;
   align-items: center;
+  justify-content: space-between; 
   border-top: 0.1rem solid var(--bordercl);
   padding: 1rem 0rem;
   margin-top: 2rem;
