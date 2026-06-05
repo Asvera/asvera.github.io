@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Asvera - rust</title>
+    <subtitle>My Protfolio Website</subtitle>
+    <link href="https://asvera.github.io/tags/rust/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://asvera.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2019-11-28T00:00:00+00:00</updated>
+    <id>https://asvera.github.io/tags/rust/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My second post</title>
+        <published>2019-11-28T00:00:00+00:00</published>
+        <updated>2019-11-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/second/" type="text/html"/>
+        <id>https://asvera.github.io/blog/second/</id>
+        
+        <content type="html">&lt;p&gt;This is my second blog post.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My first post</title>
+        <published>2019-11-27T00:00:00+00:00</published>
+        <updated>2019-11-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/first/" type="text/html"/>
+        <id>https://asvera.github.io/blog/first/</id>
+        
+        <content type="html">&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;2786602-4106993706.jpg&quot; alt=&quot;mount1&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

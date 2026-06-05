@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Asvera - javascript</title>
+    <subtitle>My Protfolio Website</subtitle>
+    <link href="https://asvera.github.io/tags/javascript/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://asvera.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-02T00:00:00+00:00</updated>
+    <id>https://asvera.github.io/tags/javascript/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Javascript’s async&#x2F;await &amp; Promise in a few words</title>
+        <published>2024-03-02T00:00:00+00:00</published>
+        <updated>2024-03-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/js-async-awaitandpromise/" type="text/html"/>
+        <id>https://asvera.github.io/blog/js-async-awaitandpromise/</id>
+        
+        <content type="html">&lt;p&gt;This is a very common pattern in Javascript:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;errorCallback&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If myFunc could block (such as on network access), we don’t want to block Javascript’s single thread, so we asked to be notified when the operation is complete.&lt;&#x2F;p&gt;
+&lt;p&gt;Javascript added syntactic sugar to make this pattern more pleasant, in two steps.&lt;&#x2F;p&gt;
+&lt;p&gt;The first step is adding a Promise object. myFunc would now returns a Promise, and the caller looks like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;errorCallback&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Very similar. An improvement is you can now return this Promise up the call chain, instead of passing down your callbacks, and you can chain them. I sometimes think of Promise as ‘CallbackManager’. It wraps them and gives them a nicer interface.&lt;&#x2F;p&gt;
+&lt;p&gt;The second step, and the key one, is the two new keywords async and await, that allow you to do this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;async function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;await &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If a function returns a Promise, we can put await in front and pretend that in the success case our code is linear. It reads a lot better. The failure case throws an exception:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;async function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;try &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;await &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;catch &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;e&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;errorCallback&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The async keyword, as far as I can tell, is just a marker for the Javascript interpreter to watch out for some voodoo within.&lt;&#x2F;p&gt;
+&lt;p&gt;The function just looks linear. It executes like a callback, in that other code will run while myFunc blocks.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s un-sugar an example, working backwards:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;async function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code before
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;try &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;await &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code after
+&lt;&#x2F;span&gt;&lt;span&gt;  } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;catch &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;e&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; err case which you always
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; handle because you are a professional
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Is equivalent to:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code before
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code after },
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; err case }
+&lt;&#x2F;span&gt;&lt;span&gt;  );
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;which is the modern way of writing:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code before
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myfunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code after },
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; err case }
+&lt;&#x2F;span&gt;&lt;span&gt;  );
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;await offers a straightforward solution to Javascript’s callback-hell by making code significantly easier to read. Just remember to catch the exception.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>JavaScript frameworks from the last decade didn&#x27;t grow well</title>
+        <published>2024-01-22T00:00:00+00:00</published>
+        <updated>2024-01-22T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/jsformlastdecade/" type="text/html"/>
+        <id>https://asvera.github.io/blog/jsformlastdecade/</id>
+        
+        <content type="html">&lt;p&gt;To anyone who has written a software application from scratch and has supported it for a few years, it shouldn’t be a surprise that the maintenance of that software comes at a cost. This cost needs to be considered when making a decision to implement a particular solution.&lt;&#x2F;p&gt;
+&lt;p&gt;By maintenance, I’m not talking about adding new features. I’m talking about the chores you have to do if you don’t want to eventually be faced with the decision to either leave it as is or kill it.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s illustrate this with an example.&lt;&#x2F;p&gt;
+&lt;p&gt;Suppose it’s late 2010, and you need to build an interactive web UI. Rather than reinvent the wheel (remember, you’re being paid to make a dashboard for the business, not to invent wheels), you come across a library called Backbone.js. Halejiojah! You don’t have to spend late nights at the office trying to figure out how to keep the UI in sync with the data. You npm install it (just kidding, npm was only a year old at the time), or more likely you just download some files from a website.&lt;&#x2F;p&gt;
+&lt;p&gt;Fast forward a couple years, and some new frameworks start popping up and gaining popularity. Because they are supported by big companies who have the resources to pay people to work on this stuff all day, those frameworks become pretty good.&lt;&#x2F;p&gt;
+&lt;p&gt;Five years later, even routine maintenance couldn’t save your dashboard UI written in Backbone.js. At some point, you struggle to find libraries to help you validate forms or convert currency. At the worst, the maintainer of Backbone.js may have moved on to other pursuits, meaning all the existing bugs are more or less yours to fix, or ignore.&lt;&#x2F;p&gt;
+&lt;p&gt;Now your colleagues are making dashboards for the business twice as fast as you are. They’re using React and have thousands of libraries at their disposal, which of course have their own maintenance cost.&lt;&#x2F;p&gt;
+&lt;p&gt;You’re faced with two choices. You can either accept that your work will take twice as long because you have to do a lot of things by hand (which will make your manager suspicious because your colleagues over there are making dashboards twice as fast!), or you can kill your Backbone.js application for good and rewrite it in a new framework.&lt;&#x2F;p&gt;
+&lt;p&gt;In 2020, the situation is a lot better for JavaScript frameworks. Angular provides concrete update guides to help you update your application to the latest version. These little tools make maintenance a breeze. You can select what version you currently have and which version you wish to upgrade to, and a checklist is generated to guide you. The React team has a commitment to limit breaking changes (but not before they raced through sixteen of them!).&lt;&#x2F;p&gt;
+&lt;p&gt;Nevertheless, you can’t assume that once you rewrite your application in Angular, everything’s going to be fine. They release updates a few times per year, so that has to be taken into account when estimating the effort it will take to maintain the application. Because if you let it fall behind, it will end up just like your Backbone.js app.&lt;&#x2F;p&gt;
+&lt;p&gt;If you install a library for everything, be prepared that the library maintainers may have retired the next time Angular releases a new major version. They’re on a beach in Hawaii, and you’re in the office pulling your hair out because the drag’n’drop file upload library doesn’t support the new version of Angular. But time’s passing quick. You don’t want to let your Angular app fall behind to the point where the relevant documentation is hard to find on the website because the version you’re using is so old. This is where software maintenance gets tricky. You have to decide what path will offer the best results for the least effort. You could make a pull request to the library, or you could convince the business that they don’t need to drag’n’drop their files. This is where engineering becomes fun because it’s not all just about writing code. Sometimes the solution may not involve code at all, but rather a conversation.&lt;&#x2F;p&gt;
+&lt;p&gt;Some say that the hardest part of doing anything is getting started. Running create-react-app on day one will give you the feeling of making a lot of progress. But if you’re not careful about your decisions, you’ll find that the maintenance of your software will remind you about your bad decisions many times over. But if you’re wise, you’ll see these reminders as the best teachers.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Asvera</title>
+    <subtitle>My Protfolio Website</subtitle>
+    <link href="https://asvera.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://asvera.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-03-07T00:00:00+00:00</updated>
+    <id>https://asvera.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How i ended up making a c++ Bouncing ball game?</title>
+        <published>2025-03-07T00:00:00+00:00</published>
+        <updated>2025-03-07T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/bouncingbalss/" type="text/html"/>
+        <id>https://asvera.github.io/blog/bouncingbalss/</id>
+        
+        <content type="html">&lt;p&gt;Hey guys, its been long time since i wrote a blog, well i do want to write about this game i made a while ago in start of january but ended up not write till now. Well its not my fault really i my mid-semester exams was approching like a bullet train 😅️🚅️.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Anyways&lt;&#x2F;strong&gt; I was really interested in making Games since a very long time, So i did my research and ended up founding out that to make them you require 2 things:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;an engine&lt;&#x2F;strong&gt; (not the IC engine but the one which will make you implement movements, gravity, etc - &lt;strong&gt;inshort physics stuff&lt;&#x2F;strong&gt;, some popular engines are &lt;em&gt;unreal and unity&lt;&#x2F;em&gt;) &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;graphics Library&lt;&#x2F;strong&gt; (which will help in drawing stuff on the screen)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;WARNING&lt;&#x2F;strong&gt;
+You know what if you are going to write your own full scale engine and graphics lib then bravo mate you are the out of the worlds, &lt;em&gt;may your soul lie in peace!&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So, in my case since i wanted to learn stuff i decided not to use them but also did not want to write all the code my-self so i decided to go with a framework like SLD which does the basic graphics for me and since i did not want to make huge project just the begineer thing so wrote my own physics for it.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.libsdl.org&#x2F;&quot;&gt;&lt;strong&gt;Simple DirectMedia Layer (SDL)&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; is a cross-platform library designed to make it easy to write multi-media software, such as games and emulators.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;BouncingBall&quot;&gt;&lt;strong&gt;Here,Bouncing Ball&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt;  the github link for the code if anyone want to have a peek of my game. I have provided the compiling instruction with it.&lt;&#x2F;p&gt;
+&lt;p&gt;Bye, Nexttime.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>TVA my local AI</title>
+        <published>2024-10-07T00:00:00+00:00</published>
+        <updated>2024-10-07T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/tva-my-voice-assistant/" type="text/html"/>
+        <id>https://asvera.github.io/blog/tva-my-voice-assistant/</id>
+        
+        <content type="html">&lt;p&gt;Searching the web or instead saying gooling is a time consuming process to find correct piece of info. so when i first tried OpenAI&#x27;s chatGPT it blew my mind not just my mind everyones minds. (BTW is was one of the first thousand user of chatGPT. HehHeh lucky me :)&lt;&#x2F;p&gt;
+&lt;p&gt;Since reading text is boring and puting strain onto my eyes thus i present you with TVA;
+as seeing and listening is faster than reading here a demo video of TVA ; &lt;&#x2F;p&gt;
+&lt;iframe width=&quot;840&quot; height=&quot;473&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;TEmJxULcxoM?si=f_-gMVGPecuKlUgd&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h1 id=&quot;terminal-voice-assistant-tva&quot;&gt;&lt;strong&gt;Terminal Voice Assistant (TVA)&lt;&#x2F;strong&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;TVA — an innovative project that brings the power of advanced AI voice interaction right to your command line. Unlike typical voice assistants like Siri or Google Assistant, TVA is designed with simplicity, speed, and local processing in mind. &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-exactly-is-tva&quot;&gt;What exactly is TVA?&lt;&#x2F;h2&gt;
+&lt;p&gt;Think of TVA as your personal command line companion, capable of understanding your requests and delivering precise, helpful responses. TVA combines the strengths of powerful AI models like OpenAI’s language models and Phind Ollam, creating a seamless user experience for those who prefer the command line interface (CLI). The result? An assistant that’s not only efficient but also respects your data privacy.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-tva-stands-out&quot;&gt;Why TVA Stands Out&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Local Processing&lt;&#x2F;strong&gt;: Unlike cloud-based alternatives, TVA runs locally on your machine. (Not exactly!)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Text-to-Search&lt;&#x2F;strong&gt;: TVA’s built-in text-to-search functionality that&#x27;s qick and accurate..&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Speed&lt;&#x2F;strong&gt;: Piper’s swift response time ensures that TVA’s voice feedback feels instantaneous.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy&lt;&#x2F;strong&gt;: Since Piper runs locally, there’s no need to send data to external servers. This keeps user data safe and secure.(Not entirely true but it can with local LLMs models like Ollama but in my case since don&#x27;t have GPU in my machine thus used third Party LLM.)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;meet-piper-the-voice-that-brings-tva-to-life&quot;&gt;Meet Piper: The Voice That Brings TVA to Life&lt;&#x2F;h2&gt;
+&lt;p&gt;What’s a voice assistant without a great voice? That’s where &lt;strong&gt;Piper&lt;&#x2F;strong&gt; comes in. Piper is a fast, local neural text-to-speech (TTS) system that delivers high-quality, natural-sounding speech. With Piper, TVA can provide immediate and lifelike responses.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-tva-matters-me&quot;&gt;Why TVA Matters Me&lt;&#x2F;h2&gt;
+&lt;p&gt;TVA isn’t just a nifty tool made by a tech enthusiasts — it’s a blueprint for how local AI systems can transform everyday digital interactions. By combining real-time, private, and efficient voice assistance, TVA proves that local solutions can be just as powerful (and more secure) than cloud-based alternatives. The integration of Piper further showcases how neural TTS technology can elevate user experiences without compromising speed or privacy.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-s-next-for-tva&quot;&gt;What’s Next for TVA?&lt;&#x2F;h2&gt;
+&lt;p&gt;I expect myself to add more features to enhance its functionality. Whether you use it for coding assistance, task management, or simply to streamline your workflow, TVA is designed to make your digital life easier and more interactive. The future is bright for TVA, and you can be part of this exciting journey and can contibute in the code as i plan to open source the project soon.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My .gitconfig file dissected</title>
+        <published>2024-06-24T00:00:00+00:00</published>
+        <updated>2024-06-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/mygitconfigdissected/" type="text/html"/>
+        <id>https://asvera.github.io/blog/mygitconfigdissected/</id>
+        
+        <content type="html">&lt;p&gt;This is my .gitconfig file. It’s not long. It’s not complicated. But it configures my workflow’s most important tool. I will dissect the file to better understand how git works and help the reader improve their own workflow.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[user]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt; = asvera
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;email&lt;&#x2F;span&gt;&lt;span&gt; = hi@asvera.com
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;signingkey&lt;&#x2F;span&gt;&lt;span&gt; = AAAAABBBBBB
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[gpg]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;program&lt;&#x2F;span&gt;&lt;span&gt; = gpg
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[commit]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpgsign&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[alias]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;co&lt;&#x2F;span&gt;&lt;span&gt; = checkout
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;ci&lt;&#x2F;span&gt;&lt;span&gt; = commit
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;st&lt;&#x2F;span&gt;&lt;span&gt; = status
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;br&lt;&#x2F;span&gt;&lt;span&gt; = branch
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;di&lt;&#x2F;span&gt;&lt;span&gt; = diff
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;fp&lt;&#x2F;span&gt;&lt;span&gt; = fetch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --prune
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;rb&lt;&#x2F;span&gt;&lt;span&gt; = rebase
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;hist&lt;&#x2F;span&gt;&lt;span&gt; = log&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --graph --abbrev-commit --decorate --date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;short \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;		--format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;format:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;#39;%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)&amp;#39; &lt;&#x2F;span&gt;&lt;span&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;		--branches --remotes --tags
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; = !exec git
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gti&lt;&#x2F;span&gt;&lt;span&gt; = !exec git
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[push]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;autoSetupRemote&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;What is git config?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;A .gitconfig is a file that configures git. But it’s not the only one.&lt;&#x2F;p&gt;
+&lt;p&gt;There are three files that tell git how to operate. Running &lt;code&gt;git config --add&lt;&#x2F;code&gt; will append one of these files. In order from lowest to highest priority:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;System: &#x2F;etc&#x2F;gitconfig. Applies to all users on a system. It is configured with the --system argument.&lt;&#x2F;li&gt;
+&lt;li&gt;User: ~&#x2F;.gitconfig: Applies to all repositories of a user. It is configured with the --global argument.&lt;&#x2F;li&gt;
+&lt;li&gt;Repo: .git&#x2F;config: Applies to a single repository. It is configured with no arguments.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This article dissects my user git config. However, the configurations apply at all levels.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;User section&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The user section is my name and email.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[user]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt; = asvera
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;email&lt;&#x2F;span&gt;&lt;span&gt; = hi@asvera.com
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But where is it actually used? The user’s name and email get included to every commit and tag. This is clearly visible when running git log:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;commit&lt;&#x2F;span&gt;&lt;span&gt; ce97934132deb2b322c54de68cubc1d402ca18e4 (HEAD -&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; git-config)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Author:&lt;&#x2F;span&gt;&lt;span&gt; asvera &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;hi@asvera.com&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Date:&lt;&#x2F;span&gt;&lt;span&gt;   Fri Jun 24 20:31:03 2024&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; -0400
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;WIP:&lt;&#x2F;span&gt;&lt;span&gt; User section
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The user section yields a useful insight: It’s easy to change my name and email per repo. Separate work and personal, or multiple clients is an example use case.&lt;&#x2F;p&gt;
+&lt;p&gt;It leads to another insight: Nothing stops me from changing my user name and email to anything. Nothing stops anyone from changing their name and email to mine. Luckily we have GPG to mitigate that.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;GPG key signing&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;GPG is a public-key cryptography system used to sign commits. It ensures commits published were made by me (someone with my private key or access to my GitHub account).&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;signingkey&lt;&#x2F;span&gt;&lt;span&gt; = AAAAABBBBBB
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[gpg]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;program&lt;&#x2F;span&gt;&lt;span&gt; = gpg
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[commit]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpgsign&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The configuration instructs git:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;signingkey = AAAAABBBBBB: The signing key to use&lt;&#x2F;li&gt;
+&lt;li&gt;program = gpg: The program used to sign&lt;&#x2F;li&gt;
+&lt;li&gt;gpgsign = true: To automatically attach a signature to every commit&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The signature is visible using &lt;code&gt;git log --show-signature&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;commit&lt;&#x2F;span&gt;&lt;span&gt; da7c2d3863581f00d489c0852a91bc15ba98eae0 (HEAD -&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; git-config)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpg:&lt;&#x2F;span&gt;&lt;span&gt; Signature made Fri Jun 14 21:00:11 2024 EDT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpg:&lt;&#x2F;span&gt;&lt;span&gt;                using EDDSA key WRVBGFF6D0E47B0B447FD15DC0B595B4F1573243
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;gpg:&lt;&#x2F;span&gt;&lt;span&gt; Good signature from &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Tigger 2024-06-11 &amp;lt;hi@asvera.com&amp;gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span&gt;ultimate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Author:&lt;&#x2F;span&gt;&lt;span&gt; asvera &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;hi@asvera.com&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Date:&lt;&#x2F;span&gt;&lt;span&gt;   Fri Jun 14 21:00:11 2024&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; -0400
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Start&lt;&#x2F;span&gt;&lt;span&gt; GPG
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Commits now appear “verified” in GitHub, GitLab, and other git platforms.&lt;&#x2F;p&gt;
+&lt;p&gt;I will not go in-depth into how GPG signing works.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Alias common actions&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I use Git aliases for common commands to save keystrokes.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[alias]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;co&lt;&#x2F;span&gt;&lt;span&gt; = checkout
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;ci&lt;&#x2F;span&gt;&lt;span&gt; = commit
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;st&lt;&#x2F;span&gt;&lt;span&gt; = status
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;br&lt;&#x2F;span&gt;&lt;span&gt; = branch
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;di&lt;&#x2F;span&gt;&lt;span&gt; = diff
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;fp&lt;&#x2F;span&gt;&lt;span&gt; = fetch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --prune
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;rb&lt;&#x2F;span&gt;&lt;span&gt; = rebase
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;While each alias only saves a few moments, it quickly adds up.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Pretty commit history&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve aliased commands too long to write comfortably. git hist uses git log to show a project’s commit graph.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;hist&lt;&#x2F;span&gt;&lt;span&gt; = log&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --graph --abbrev-commit --decorate --date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;short \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;    --branches --remotes --tags &lt;&#x2F;span&gt;&lt;span&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;    --format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;format:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;#39;%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)&amp;#39; &lt;&#x2F;span&gt;&lt;span&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Normal git log shows a linear history. It can be configured to show way more.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--graph:&lt;&#x2F;span&gt;&lt;span&gt; Graphs &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;--&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;--&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; beside each commit, showing how they relate to each other.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--abbrev-commit:&lt;&#x2F;span&gt;&lt;span&gt; Shortens commit length
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--decorate:&lt;&#x2F;span&gt;&lt;span&gt; Short for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --derocate&lt;&#x2F;span&gt;&lt;span&gt;:short
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--date&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;short: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Shortens&lt;&#x2F;span&gt;&lt;span&gt; date
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--branches:&lt;&#x2F;span&gt;&lt;span&gt; Shows all branches, not just the curent branch.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--remotes:&lt;&#x2F;span&gt;&lt;span&gt; Shows the local copy of all remote branches.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--tags:&lt;&#x2F;span&gt;&lt;span&gt; Shows tags
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;--format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;format:&amp;#39;...&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Applies&lt;&#x2F;span&gt;&lt;span&gt; a fancy format that I copied from somewhere years ago.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --oneline&lt;&#x2F;span&gt;&lt;span&gt; is equivalent (but doesn’t look as good)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Put together, git hist shows my project’s commit graph:&lt;&#x2F;p&gt;
+&lt;p&gt;terminal screenshot of the alias git hist showing the commit graph&lt;&#x2F;p&gt;
+&lt;p&gt;git hist was especially useful as a new git user. I could quickly see the project’s commit graph after each merge, rebase, or cherry-pick. git hist is also indispensable when debugging failed operations. I now know the exact state of each branch in the repo.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Time-saving aliases&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve mindlessly typed git git status far too many times. One approach is to punish the behavior. “I should train myself to be better at typing so that I don’t make this mistake”.&lt;&#x2F;p&gt;
+&lt;p&gt;I disagree. Avoiding git git doesn’t improve the structure of my thinking. Instead, I smooth over the papercut.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fafafa;color:#383a42;&quot;&gt;&lt;code&gt;&lt;span&gt;git = !exec git
+&lt;&#x2F;span&gt;&lt;span&gt;gti = !exec git
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;!exec executes eveything after as a terminal command. In this case running git again with all arguments. git git status becomes git status. It’s also recursive!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Auto setup remote&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If I create and push a branch, I’ll often run into the error:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;fatal:&lt;&#x2F;span&gt;&lt;span&gt; The current branch new-branch has no upstream branch.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;To&lt;&#x2F;span&gt;&lt;span&gt; push the current branch and set the remote as upstream, use
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; push&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --set-upstream&lt;&#x2F;span&gt;&lt;span&gt; origin new-branch
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is dumb. If a local branch doesn’t have an upstream branch, I always want to create one.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;[push]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;autoSetupRemote&lt;&#x2F;span&gt;&lt;span&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Setting &lt;code&gt;autoSetupRemote = true&lt;&#x2F;code&gt; automatically creates an upstream branch without having to use special args. I’ll never encounter this error again!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Dissecting my simple .gitconfig file reveals a lot. Hopefully you now have a deeper understanding of git and how to use it. I also hope .gitconfig has become less intimidating. Go modify your own!2.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ocatve FOSS alternative to MATLab</title>
+        <published>2024-04-20T00:00:00+00:00</published>
+        <updated>2024-04-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/octave-foss-alternative/" type="text/html"/>
+        <id>https://asvera.github.io/blog/octave-foss-alternative/</id>
+        
+        <content type="html">&lt;p&gt;Being an engineer with non CS&#x2F;IT majors comes with learning software rather building one. There are various softwares for designing,ploting,simulation normally all these comes with the same pakaged software such as &lt;strong&gt;Matlab, GNUplot, Fusion360, Blender, Octave, FREECAD&lt;&#x2F;strong&gt;,&lt;em&gt;etc...&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For this blog, lets only talk about &lt;strong&gt;Plotting software&lt;&#x2F;strong&gt; such as Matlab, GNUplot, Octave.&lt;&#x2F;p&gt;
+&lt;p&gt;The most popular and commanly used in university and collage is none other than Matlab. It&#x27;s mostly used by branches related Electrical and Mechanical Engineering.Rather, than saying Matlab is software saying it&#x27;s an programming Language will be more accurate.&lt;&#x2F;p&gt;
+&lt;p&gt;There are 2 different things:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Matlab software&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Matlab Programming Language&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In Engineering syllabus there course &lt;em&gt;control Engineering&lt;&#x2F;em&gt; it could rather be whole new specialization. In this course use various methods such as &lt;em&gt;Bode plot, Nyquist Plot, Root Locus, etc..&lt;&#x2F;em&gt; to check the stability of a system. Since, I&#x27;m  FOSS supporter how can is use MATLab thus i was using Ocatve.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;octave.jpg&quot; alt=&quot;Ocatve&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;octave.org&#x2F;&quot;&gt;&lt;strong&gt;Ocatve&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; is and open source software written with C++ intended for carrying out numerical calculations and simulations with same implementation or syntax as Matlab language. Other difference being Open Source it use and &lt;em&gt;Modularize approach&lt;&#x2F;em&gt; to load pakages.&lt;&#x2F;p&gt;
+&lt;p&gt;This &lt;em&gt;Modularize appproach&lt;&#x2F;em&gt;  makes it utilize fewer resources&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Javascript’s async&#x2F;await &amp; Promise in a few words</title>
+        <published>2024-03-02T00:00:00+00:00</published>
+        <updated>2024-03-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/js-async-awaitandpromise/" type="text/html"/>
+        <id>https://asvera.github.io/blog/js-async-awaitandpromise/</id>
+        
+        <content type="html">&lt;p&gt;This is a very common pattern in Javascript:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;errorCallback&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If myFunc could block (such as on network access), we don’t want to block Javascript’s single thread, so we asked to be notified when the operation is complete.&lt;&#x2F;p&gt;
+&lt;p&gt;Javascript added syntactic sugar to make this pattern more pleasant, in two steps.&lt;&#x2F;p&gt;
+&lt;p&gt;The first step is adding a Promise object. myFunc would now returns a Promise, and the caller looks like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;errorCallback&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Very similar. An improvement is you can now return this Promise up the call chain, instead of passing down your callbacks, and you can chain them. I sometimes think of Promise as ‘CallbackManager’. It wraps them and gives them a nicer interface.&lt;&#x2F;p&gt;
+&lt;p&gt;The second step, and the key one, is the two new keywords async and await, that allow you to do this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;async function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;await &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If a function returns a Promise, we can put await in front and pretend that in the success case our code is linear. It reads a lot better. The failure case throws an exception:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;async function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;try &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;await &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;successCallback&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;catch &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;e&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;errorCallback&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The async keyword, as far as I can tell, is just a marker for the Javascript interpreter to watch out for some voodoo within.&lt;&#x2F;p&gt;
+&lt;p&gt;The function just looks linear. It executes like a callback, in that other code will run while myFunc blocks.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s un-sugar an example, working backwards:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;async function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code before
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;try &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;await &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code after
+&lt;&#x2F;span&gt;&lt;span&gt;  } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;catch &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;e&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; err case which you always
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; handle because you are a professional
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Is equivalent to:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code before
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myFunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;then&lt;&#x2F;span&gt;&lt;span&gt;(
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code after },
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; err case }
+&lt;&#x2F;span&gt;&lt;span&gt;  );
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;which is the modern way of writing:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;wrapper&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code before
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;myfunc&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; code after },
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span&gt;(){ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; err case }
+&lt;&#x2F;span&gt;&lt;span&gt;  );
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;await offers a straightforward solution to Javascript’s callback-hell by making code significantly easier to read. Just remember to catch the exception.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Understanding Unicode and UTF-8</title>
+        <published>2024-01-25T00:00:00+00:00</published>
+        <updated>2024-01-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/understandingutf8/" type="text/html"/>
+        <id>https://asvera.github.io/blog/understandingutf8/</id>
+        
+        <content type="html">&lt;p&gt;Unicode maps 32-bit (4 byte) integers, also called code points or runes, to characters. UTF-8 is a way of storing those code points using less than 4 bytes per character.&lt;&#x2F;p&gt;
+&lt;p&gt;61 is the Unicode code point for a, 229 is å and 5793 is ᚡ. Unicode is how most modern programming languages represent strings: Java, .Net (C#, VB.Net), Go, and Python3, for example. Code points are usually written as two hexadecimal bytes prefixed by the letter u, or four prefixed by U. &lt;&#x2F;p&gt;
+&lt;p&gt;In python 3 this will display ᚡ:
+&lt;code&gt;print(&#x27;\u16a1&#x27;)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The first byte of that 32-bit integer (the code point) covers most characters used by European languages. The first 127 code points (hex values 00 to 7f) are the same as&lt;&#x2F;p&gt;
+&lt;p&gt;ASCII: 61 is both Unicode and ASCII code for a. The next 128 code points (0x80-0xff) are the same as ISO-8859-1, also called latin-1: e5 (229) is both Unicode and ISO-8859-1 for å.&lt;&#x2F;p&gt;
+&lt;p&gt;The first two bytes cover characters for almost all modern languages. It is extremely rare to need the full 4 bytes as they are mostly empty. A rare exception, sad kitty U0001F640 needs three bytes. It broke WordPress when I put it in this post – that’s how common characters above two bytes are!&lt;&#x2F;p&gt;
+&lt;p&gt;An encoding is a mapping from bytes to Unicode code points. If you use the code points directly as their mapping (4 bytes per code point) you have UTF-32. So 00 00 00 61 is UTF-32 for Unicode code point 61, which is a.&lt;&#x2F;p&gt;
+&lt;p&gt;English speakers will usually only need one byte, and other language users two, so there are more efficient encodings. The most common Unicode encoding is UTF-8.&lt;&#x2F;p&gt;
+&lt;p&gt;The first 127 values of UTF-8 map directly to Unicode code points, and hence to ASCII codes. 61 is UTF-8 for Unicode code point 61, which is character a. If you only ever use values up to 127, UTF-8, Unicode code points, and ASCII are the same. This makes confusion easy.&lt;&#x2F;p&gt;
+&lt;p&gt;Above 127, UTF-8 uses between two and four bytes for each code point. c3 a5 is UTF-8 for Unicode code point u00e5, which is å. &lt;&#x2F;p&gt;
+&lt;p&gt;In python3:
+&lt;code&gt;bytes([0xc3, 0xa5]).decode(&amp;quot;utf8&amp;quot;)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This means UTF-8 is not compatible with ISO-8859-1.&lt;&#x2F;p&gt;
+&lt;p&gt;When you receive a string of bytes, you also need to know it’s encoding to interpret it as Unicode. Luckily is is quite easy to test for valid UTF-8. In Go you use the Valid function of unicode&#x2F;utf8. In Python you try to .decode(&amp;quot;utf8&amp;quot;) and catch the UnicodeDecodeError.&lt;&#x2F;p&gt;
+&lt;p&gt;In summary (all values are hex):&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;UTF-8&lt;&#x2F;th&gt;&lt;th&gt;UTF-32&lt;&#x2F;th&gt;&lt;th&gt;Unicode code point&lt;&#x2F;th&gt;&lt;th&gt;ASCII&lt;&#x2F;th&gt;&lt;th&gt;ISO-8859-1&lt;&#x2F;th&gt;&lt;th&gt;Character&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;61&lt;&#x2F;td&gt;&lt;td&gt;00 00 00 61&lt;&#x2F;td&gt;&lt;td&gt;61(decimal 97)&lt;&#x2F;td&gt;&lt;td&gt;61&lt;&#x2F;td&gt;&lt;td&gt;61&lt;&#x2F;td&gt;&lt;td&gt;a&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;c3 a5&lt;&#x2F;td&gt;&lt;td&gt;00 00 00 e5&lt;&#x2F;td&gt;&lt;td&gt;e5(decimal 229)&lt;&#x2F;td&gt;&lt;td&gt;None&lt;&#x2F;td&gt;&lt;td&gt;e5&lt;&#x2F;td&gt;&lt;td&gt;å&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;e1 9a a1&lt;&#x2F;td&gt;&lt;td&gt;00 00 16 a1&lt;&#x2F;td&gt;&lt;td&gt;16a1(decimal 5793)&lt;&#x2F;td&gt;&lt;td&gt;None&lt;&#x2F;td&gt;&lt;td&gt;None&lt;&#x2F;td&gt;&lt;td&gt;ᚡ&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>JavaScript frameworks from the last decade didn&#x27;t grow well</title>
+        <published>2024-01-22T00:00:00+00:00</published>
+        <updated>2024-01-22T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/jsformlastdecade/" type="text/html"/>
+        <id>https://asvera.github.io/blog/jsformlastdecade/</id>
+        
+        <content type="html">&lt;p&gt;To anyone who has written a software application from scratch and has supported it for a few years, it shouldn’t be a surprise that the maintenance of that software comes at a cost. This cost needs to be considered when making a decision to implement a particular solution.&lt;&#x2F;p&gt;
+&lt;p&gt;By maintenance, I’m not talking about adding new features. I’m talking about the chores you have to do if you don’t want to eventually be faced with the decision to either leave it as is or kill it.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s illustrate this with an example.&lt;&#x2F;p&gt;
+&lt;p&gt;Suppose it’s late 2010, and you need to build an interactive web UI. Rather than reinvent the wheel (remember, you’re being paid to make a dashboard for the business, not to invent wheels), you come across a library called Backbone.js. Halejiojah! You don’t have to spend late nights at the office trying to figure out how to keep the UI in sync with the data. You npm install it (just kidding, npm was only a year old at the time), or more likely you just download some files from a website.&lt;&#x2F;p&gt;
+&lt;p&gt;Fast forward a couple years, and some new frameworks start popping up and gaining popularity. Because they are supported by big companies who have the resources to pay people to work on this stuff all day, those frameworks become pretty good.&lt;&#x2F;p&gt;
+&lt;p&gt;Five years later, even routine maintenance couldn’t save your dashboard UI written in Backbone.js. At some point, you struggle to find libraries to help you validate forms or convert currency. At the worst, the maintainer of Backbone.js may have moved on to other pursuits, meaning all the existing bugs are more or less yours to fix, or ignore.&lt;&#x2F;p&gt;
+&lt;p&gt;Now your colleagues are making dashboards for the business twice as fast as you are. They’re using React and have thousands of libraries at their disposal, which of course have their own maintenance cost.&lt;&#x2F;p&gt;
+&lt;p&gt;You’re faced with two choices. You can either accept that your work will take twice as long because you have to do a lot of things by hand (which will make your manager suspicious because your colleagues over there are making dashboards twice as fast!), or you can kill your Backbone.js application for good and rewrite it in a new framework.&lt;&#x2F;p&gt;
+&lt;p&gt;In 2020, the situation is a lot better for JavaScript frameworks. Angular provides concrete update guides to help you update your application to the latest version. These little tools make maintenance a breeze. You can select what version you currently have and which version you wish to upgrade to, and a checklist is generated to guide you. The React team has a commitment to limit breaking changes (but not before they raced through sixteen of them!).&lt;&#x2F;p&gt;
+&lt;p&gt;Nevertheless, you can’t assume that once you rewrite your application in Angular, everything’s going to be fine. They release updates a few times per year, so that has to be taken into account when estimating the effort it will take to maintain the application. Because if you let it fall behind, it will end up just like your Backbone.js app.&lt;&#x2F;p&gt;
+&lt;p&gt;If you install a library for everything, be prepared that the library maintainers may have retired the next time Angular releases a new major version. They’re on a beach in Hawaii, and you’re in the office pulling your hair out because the drag’n’drop file upload library doesn’t support the new version of Angular. But time’s passing quick. You don’t want to let your Angular app fall behind to the point where the relevant documentation is hard to find on the website because the version you’re using is so old. This is where software maintenance gets tricky. You have to decide what path will offer the best results for the least effort. You could make a pull request to the library, or you could convince the business that they don’t need to drag’n’drop their files. This is where engineering becomes fun because it’s not all just about writing code. Sometimes the solution may not involve code at all, but rather a conversation.&lt;&#x2F;p&gt;
+&lt;p&gt;Some say that the hardest part of doing anything is getting started. Running create-react-app on day one will give you the feeling of making a lot of progress. But if you’re not careful about your decisions, you’ll find that the maintenance of your software will remind you about your bad decisions many times over. But if you’re wise, you’ll see these reminders as the best teachers.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Off to a good start</title>
+        <published>2023-11-08T00:00:00+00:00</published>
+        <updated>2023-11-08T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/blog/offtogoodstart/" type="text/html"/>
+        <id>https://asvera.github.io/blog/offtogoodstart/</id>
+        
+        <content type="html">&lt;p&gt;The hardest part of starting a blog was choosing a good theme. After going through various themes that I created myself and visiting various people&#x27;s blog sites for inspiration, it took almost 4-5 months to finally complete a theme for my site that I tailored it myself, facing many hardships and spending days tweaking HTML and CSS.&lt;&#x2F;p&gt;
+&lt;p&gt;You might laugh that I sound like a noob, but I&#x27;m not. Well, it kind of does sound like I am, but I have my reasons and some of them are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Semester exams&lt;&#x2F;li&gt;
+&lt;li&gt;College life depressions&lt;&#x2F;li&gt;
+&lt;li&gt;Laziness&lt;&#x2F;li&gt;
+&lt;li&gt;Spending time with friends, just chatting&lt;&#x2F;li&gt;
+&lt;li&gt;College attendance&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Out of the reasons I listed, &lt;em&gt;college attendance&lt;&#x2F;em&gt; is the most important one. For some weird reason, my college has a 75% attendance criteria for each course of the semester, forcing students to comply with the rule. Anyone who doesn&#x27;t comply gets detained from taking the semester exams, resulting in failing the courses and accumulating backlogs. If you accumulate more than 7-8 backlogs, you have to repeat the year. There can be debates over this topic; I often hear my friends cursing this system, and one of them wasn&#x27;t allowed to appear for an examination.&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, I decided to use this simple yet elegant-looking theme.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My Projects</title>
+        <published>2022-11-27T00:00:00+00:00</published>
+        <updated>2022-11-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/projects/" type="text/html"/>
+        <id>https://asvera.github.io/projects/</id>
+        
+        <content type="html">&lt;p&gt;This is my Project Page.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Z4M_HqPIMXk&quot;&gt;&lt;strong&gt;Space Root React App&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Designed keeping in mind UX of visitor also fully responsive, and the Tech used is ExpressJS, ReactJS,
+TailwindCSS, React-Router-dom.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;share-f5j.pages.dev&#x2F;&quot;&gt;&lt;strong&gt;ShareIt&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - The easiest way to share files across all of your devices. Send files of any size and type, as many times as you want. It&#x27;s use dropbox api and storage services.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;filmage&quot;&gt;&lt;strong&gt;FilMage&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Simple image processing REST API built with Flask that applies various filters (like blur, contour, detail, etc.) and to uploaded images via HTTP requests.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;GCT&quot;&gt;&lt;strong&gt;GCT&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - A Google Contact Alternative application for efficiently searching and managing contacts stored in an
+SQLite database, developed using Python and the Flask micro web framework.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;mern_todo_app&quot;&gt;&lt;strong&gt;Todo App&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Created to-do application using the MERN stack, comprising MongoDB (NoSQL database), ExpressJS, ReactJS, and Node.js. Integrated Axios for efficient API communication.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;residentweb&quot;&gt;&lt;strong&gt;Real Estate Website&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Build utilises the ReactJs, Vanilla CSS, and variouse npm pakages such as framer motion, swiper, etc.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&#x2F;studentDB_flask&quot;&gt;&lt;strong&gt;StudenDB&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; - Simple app in &lt;em&gt;FLASK Micro framework&lt;&#x2F;em&gt; to Perform CRUD operations on sqlite database.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Others&lt;&#x2F;strong&gt; - Other Vanilla JS projects such as &lt;strong&gt;calculator, weather app, etc&lt;&#x2F;strong&gt; is on my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Asvera&quot;&gt;Github&lt;&#x2F;a&gt; acccount.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If want see all my project &amp;amp; code visit my Github Page&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About Me</title>
+        <published>2022-05-14T00:00:00+00:00</published>
+        <updated>2022-05-14T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://asvera.github.io/about/" type="text/html"/>
+        <id>https://asvera.github.io/about/</id>
+        
+        <content type="html">&lt;p&gt;Hello! I&#x27;m asvera, a dedicated software developer. I specialize in web development, particularly in JavaScript and React, and I&#x27;m always looking for new challenges to tackle.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;my-skills&quot;&gt;My Skills&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Programming Languages:&lt;&#x2F;strong&gt; C&#x2F;C++, JavaScript, TypeScript, Python&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Frameworks and Libraries:&lt;&#x2F;strong&gt; ReactJS, Flask, ExpressJS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Tools and Technologies:&lt;&#x2F;strong&gt; Git, Sqlite3, MangoDB&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Other:&lt;&#x2F;strong&gt; Markdown, Shell scripting&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Soft Skills:&lt;&#x2F;strong&gt; Project Management, Video Editing, Time management, Problem-solving, Teamwork, Communication&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;contact-me&quot;&gt;Contact Me&lt;&#x2F;h2&gt;
+&lt;p&gt;If you&#x27;re interested in collaborating or just want to chat, feel free to reach out:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;&#x2F;strong&gt; asverarise@gmail.com&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;&#x2F;strong&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubham35325&quot;&gt;Asvera on LinkedIn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;asvera&quot;&gt;Asvera on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;cv-resume&quot;&gt;CV&#x2F;Resume&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;My CV&#x2F;Resume&lt;&#x2F;strong&gt; Will soon be updated!.&lt;&#x2F;p&gt;
+&lt;p&gt;Thank you for taking the time to learn a bit about me!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
